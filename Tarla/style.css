@@ -566,3 +566,39 @@
     line-height: 72px; /* 423.529% */
     text-transform: uppercase;
   }
+  .footer {
+    width: 98%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 170px;
+    padding: 105px 17px 0px 15px;
+    flex-wrap: wrap;
+  }
+  .divFooter {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex: wrap;
+  }
+  .Hf {
+    color: #000;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36.018px; /* 163.72% */
+  }
+  .PF {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.003px; /* 150.019% */
+    text-transform: uppercase;
+  }
