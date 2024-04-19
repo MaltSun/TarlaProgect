@@ -1,0 +1,13 @@
+@media screen and (max-width: 900px) {
+  .hamburger-menu {
+    visibility: visible;
+  }
+  .navigation {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 1412px) {
+  .img1 {
+    display: none;
+  }
+}
