@@ -465,3 +465,54 @@
     font-weight: 400;
     line-height: 28px;
   }
+  .section7 {
+    height: 500px;
+    padding-top: 13px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .div7 {
+    height: 336px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .button7_1,
+  .button7_2 {
+    width: 95px;
+    height: 58px;
+    color: #0126de;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34.002px;
+    border-radius: 35px;
+    border: 1px solid #0126de;
+    background: none;
+  }
+  .B {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 70px;
+  }
+  .line {
+    width: 1440px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #000;
+  }
