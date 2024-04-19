@@ -19,13 +19,15 @@
     list-style-type: none;
   }
   .body {
-    max-width: 1440px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background: #f5ede7;
-  }
+    
+      max-width: 1440px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background: #f5ede7;
+  
+}
   .header {
     width: 96.7%;
     height: 70px;
@@ -602,3 +604,4 @@
     line-height: 24.003px; /* 150.019% */
     text-transform: uppercase;
   }
+  
