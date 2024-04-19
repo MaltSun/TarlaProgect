@@ -11,3 +11,35 @@
     display: none;
   }
 }
+@media screen and (max-width: 1435px) {
+  .section5 {
+    display: none;
+  }
+}
+@media screen and (max-width: 930px) {
+  .visible4 {
+    display: none;
+  }
+  .visible5 {
+    display: none;
+  }
+  .visible6 {
+    display: none;
+  }
+}
+@media screen and (max-width: 769px) {
+  .button4unvisible {
+    display: block;
+  }
+}
+@media screen and (max-width: 1107px) {
+  .section3 {
+    flex-direction: column;
+  }
+  .img3 {
+    display: none;
+  }
+  .img3UnVisible {
+    display: block;
+  }
+}
