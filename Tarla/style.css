@@ -402,3 +402,66 @@
     font-weight: 400;
     line-height: 56.023px; /* 143.649% */
   }
+  .section5 {
+    width: 1440px;
+    height: auto;
+    padding-top: 47px;
+  }
+  .section6 {
+    width: 99%;
+    height: auto;
+    padding: 40px 7px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .div6 {
+    width: auto;
+    height: 577px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+  .img6 {
+    width: 409px;
+    height: 272px;
+    border-radius: 10px;
+  }
+  .p6_1 {
+    width: 360px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 68.553px; /* 124.641% */
+  }
+  .p6_2 {
+    max-width: 390px;
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .p6_3 {
+    max-width: 400px;
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
