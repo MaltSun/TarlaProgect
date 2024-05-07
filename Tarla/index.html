@@ -1,221 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tarla</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaStyle.css" />
-  </head>
-  <header class="header">
-    <div class="hamburger-menu">
-      <input id="menu__toggle" type="checkbox" />
-      <label class="menu__btn" for="menu__toggle">
-        <span></span>
-      </label>
-      <ul class="menu__box" >
-        <li><a class="menu__item" href="#shop">Shop</a></li>
-        <li><a class="menu__item" href="#howItWorks">How it works?</a></li>
-        <li><a class="menu__item" href="#whoIsTarla">Who is Tarla?</a></li>
-      </ul>
-    </div>
-    <img src="..\Images\Frame.png" alt="logo" />
-    <ul class="navigation">
-      <li class="li"><a class="link" href="#shop"> Shop</a></li>
-      <li class="li"><a class="link" href="#howItWorks">How it works?</a></li>
-      <li class="li"><a class="link" href="#whoIsTarla">Who is Tarla?</a></li>
-    </ul>
 
-    <button>
-      <img src="..\Images\Day-Night.png" alt="Rectangle.png" />
-    </button>
-  </header>
-  <body class="body">
-    <section class="section1">
-      <div class="div1">
-        <p class="H1">Fresh pastry kits</p>
-        <p class="P1">
-          Bringing the smells and tastes of your favourite patisserie to your
-          home. Our kits have everything you need to easily make killer pastries
-          every time. We’ve done the tricky bits so all you need to do is roll,
-          proof and bake!
-        </p>
-        <button class="button1">Shop pastry kits</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarla</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaStyle.css" />
+  <link rel="stylesheet" href="swaper.css" />
+  <link rel="stylesheet" href="sdarkLight.css" />
+</head>
+<header class="header">
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#shop">Shop</a></li>
+      <li><a class="menu__item" href="#howItWorks">How it works?</a></li>
+      <li><a class="menu__item" href="#whoIsTarla">Who is Tarla?</a></li>
+    </ul>
+  </div>
+  <img src="..\Images\Frame.png" alt="logo" />
+  <ul class="navigation">
+    <li class="li"><a class="link" href="#shop"> Shop</a></li>
+    <li class="li"><a class="link" href="#howItWorks">How it works?</a></li>
+    <li class="li"><a class="link" href="#whoIsTarla">Who is Tarla?</a></li>
+  </ul>
+
+  <button class="switcher">
+    <img src="..\Images\Day-Night.png" alt="Rectangle.png" />
+  </button>
+  <div class="logIn">
+    <img src="..\Images\Person.svg" alt="Rectangle.png" />
+    <p>Log in</p>
+  </div>
+</header>
+
+<body class="body">
+  <section class="section1 dayMode">
+    <div class="div1">
+      <p class="H1">Fresh pastry kits</p>
+      <p class="P1">
+        Bringing the smells and tastes of your favourite patisserie to your
+        home. Our kits have everything you need to easily make killer pastries
+        every time. We’ve done the tricky bits so all you need to do is roll,
+        proof and bake!
+      </p>
+      <button class="button1">Shop pastry kits</button>
+    </div>
+    <div class="swiper mySwiper img1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="..\ImagesSwapper\swapper1.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="..\ImagesSwapper\swapper2.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="..\ImagesSwapper\swapper5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="..\ImagesSwapper\swapper3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="..\ImagesSwapper\swapper4.jpg" />
+        </div>
       </div>
-      <img class="img1" src="..\Images\Rectangle.png" alt="" />
-    </section>
-    <section id="howItWorks" class="section2">
-      <p class="p2">How it works</p>
-      <div class="div2">
-        <div class="img2">
-          <img src="..\Images\1.png" alt="" />
-          <p class="H2_2">Choose your fave</p>
-          <p class="p2_2">
-            This sounds easier than it's going to be. We've got all the classics
-            on here, so now it's over to you.
-          </p>
-        </div>
-        <div class="img2">
-          <img src="..\Images\2.png" alt="" />
-          <p class="H2">Ding dong</p>
-          <p class="p2_2">
-            Next you'll get a beautiful little package delivered to your door,
-            on a day and time slot that you choose.
-          </p>
-        </div>
-        <div class="img2">
-          <img src="..\Images\3.png" alt="" />
-          <p class="H2">Get baked</p>
-          <p class="p2_2">
-            Take your fresh pastry sheet and fillings, learn our pro techniques
-            then never buy a stale pastry ever again.
-          </p>
-        </div>
-        <div class="img2">
-          <img src="..\Images\4.png" alt="" />
-          <p class="H2_2">Take the credit</p>
-          <p class="p2_2">
-            It was all you, nudge-nudge wink-wink. We're just happy to be your
-            loyal side-kick.
-          </p>
-        </div>
-      </div>
-      <button class="button2">Shop pastry kits</button>
-    </section>
-    <section class="section3">
-      <img class="img3" src="..\Images\img3.png" alt="" />
-      <div class="div3">
-        <p class="p3">
-          Freshly baked means fresh bakery smells filling your home, warm oozey
-          pastries on your plates, and never needing to get out of your PJs.
-        </p>
-        <img class="img3UnVisible" src="..\Images\img3.png" alt="" />
-        <button class="button2">Shop pastry kits</button>
-      </div>
-    </section>
-    <section id="shop" class="section4">
-      <p class="H4">Shop pastry kits</p>
-      <div class="div4">
-        <div>
-          <img src="..\Images\3-1.png" alt="" />
-          <p class="p4_2">All-Butter Croissant</p>
-          <p class="p4_3">Kit of 6 - £12</p>
-          <button class="button4">Add to cart</button>
-        </div>
-        <div>
-          <img src="..\Images\3-2.png" alt="" />
-          <p class="p4_2">Almond Croissant</p>
-          <p class="p4_3">Kit of 6 - £13.50</p>
-          <button class="button4">Add to cart</button>
-        </div>
-        <div>
-          <img src="..\Images\3-3.png" alt="" />
-          <p class="p4_2">Raspberry Danish</p>
-          <p class="p4_3">Kit of 6 - £13.50</p>
-          <button class="button4">Add to cart</button>
-        </div>
-        <div class="visible4">
-          <img src="..\Images\3-4.png" alt="" />
-          <p class="p4_2">Pain Aux Raisins</p>
-          <p class="p4_3">Kit of 6 - £13.50</p>
-          <button class="button4">Add to cart</button>
-        </div>
-        <div class="visible5">
-          <img src="..\Images\3-5.png" alt="" />
-          <p class="p4_2">Apricot Danish</p>
-          <p class="p4_3">Kit of 6 - £13.50</p>
-          <button class="button4">Add to cart</button>
-        </div>
-        <div class="visible6">
-          <img src="..\Images\3-6.png" alt="" />
-          <p class="p4_2">Pain Au Chocolat</p>
-          <p class="p4_3">Kit of 6 - £13.50</p>
-          <button class="button4">Add to cart</button>
-        </div>
-        <button class="button4unvisible">Load more</button>
-      </div>
-    </section>
-    <section class="section5">
-      <img src="..\Images\section5.png" alt="" />
-    </section>
-    <section id="whoIsTarla" class="section6">
-      <div class="div6">
-        <img class="img6" src="..\Images\6-1.png" alt="" />
-        <p class="p6_1">Better than the bakery</p>
-        <p class="p6_2">
-          You’ll soon be making pastries to rival the best bakeries in town. We
-          use only the best ingredients for generous pastries that taste and
-          smell amazing. So good, that you’ll take all the credit.
+      <div class="swiper-pagination"></div>
+     
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+       </div>
+  </section>
+  <section id="howItWorks" class="section2">
+    <p class="p2">How it works</p>
+    <div class="div2">
+      <div class="img2">
+        <img src="..\Images\1.png" alt="" />
+        <p class="H2_2">Choose your fave</p>
+        <p class="p2_2">
+          This sounds easier than it's going to be. We've got all the classics
+          on here, so now it's over to you.
         </p>
       </div>
-      <div class="div6">
-        <img class="img6" src="..\Images\6-2.png" alt="" />
-        <p class="p6_1">Planet-friendly packaging</p>
-        <p class="p6_2">
-          We’ve done everything we can to make sure our packaging has the
-          lightest footprint on the planet as possible. We’ve made sure
-          everything is recyclable, and use as little packaging as we can.
+      <div class="img2">
+        <img src="..\Images\2.png" alt="" />
+        <p class="H2">Ding dong</p>
+        <p class="p2_2">
+          Next you'll get a beautiful little package delivered to your door,
+          on a day and time slot that you choose.
         </p>
       </div>
-      <div class="div6">
-        <img class="img6" src="..\Images\6-3.png" alt="" />
-        <p class="p6_1">Simple to bake at home</p>
-        <p class="p6_3">
-          We’ve done the hard work, so you don’t have to. Every pastry is easy
-          to make with our 3-step instructions and doesn’t require any special
-          tools – just an oven!
+      <div class="img2">
+        <img src="..\Images\3.png" alt="" />
+        <p class="H2">Get baked</p>
+        <p class="p2_2">
+          Take your fresh pastry sheet and fillings, learn our pro techniques
+          then never buy a stale pastry ever again.
         </p>
       </div>
-    </section>
-    <section class="section7">
-      <div class="div7">
-        <img src="..\Images\7-1.png" alt="" />
-        <img src="..\Images\7-2.png" alt="" />
-        <img src="..\Images\7-3.png" alt="" />
-        <img src="..\Images\7-4.png" alt="" />
-        <img src="..\Images\7-5.png" alt="" />
-      </div>
-      <div class="B">
-        <button class="button7_1">Left</button>
-        <button class="button7_2">Right</button>
-      </div>
-    </section>
-    <div class="line"></div>
-    <section class="section8">
-      <p class="H8">Join our community</p>
-      <p class="p8">and let's get baked</p>
-      <button class="button8"><a href="">Send us a message</a></button>
-    </section>
-  </body>
-  <footer class="footer">
-    <div><img src="Frame.png" alt="" /></div>
-    <div class="divFooter">
-      <div class="PF">
-        <p class="Hf">Account</p>
-        <p>Sign Up</p>
-        <p>Log In</p>
-      </div>
-      <div class="PF">
-        <p class="Hf">Our company</p>
-        <p>Shop</p>
-        <p>Our story</p>
-        <p>Who is Tarla?</p>
-      </div>
-      <div class="PF">
-        <p class="Hf">Resources</p>
-        <p>FAQ</p>
-        <p>Refund Policy</p>
-        <p>Become an Influencer</p>
-        <p>Privacy Policy</p>
-        <p>Terms of Service</p>
-      </div>
-      <div class="PF">
-        <p class="Hf">Contacts</p>
-        <p>location</p>
-        <p>telephone</p>
-        <p>Github</p>
-        <p>E-mail</p>
+      <div class="img2">
+        <img src="..\Images\4.png" alt="" />
+        <p class="H2_2">Take the credit</p>
+        <p class="p2_2">
+          It was all you, nudge-nudge wink-wink. We're just happy to be your
+          loyal side-kick.
+        </p>
       </div>
     </div>
-  </footer>
+    <button class="button2">Shop pastry kits</button>
+  </section>
+  <section class="section3">
+    <img class="img3" src="..\Images\img3.png" alt="" />
+    <div class="div3">
+      <p class="p3">
+        Freshly baked means fresh bakery smells filling your home, warm oozey
+        pastries on your plates, and never needing to get out of your PJs.
+      </p>
+      <img class="img3UnVisible" src="..\Images\img3.png" alt="" />
+      <button class="button2">Shop pastry kits</button>
+    </div>
+  </section>
+  <section id="shop" class="section4">
+    <p class="H4">Shop pastry kits</p>
+    <div class="div4">
+      <div>
+        <img src="..\Images\3-1.png" alt="" />
+        <p class="p4_2">All-Butter Croissant</p>
+        <p class="p4_3">Kit of 6 - £12</p>
+        <button class="button4">Add to cart</button>
+      </div>
+      <div>
+        <img src="..\Images\3-2.png" alt="" />
+        <p class="p4_2">Almond Croissant</p>
+        <p class="p4_3">Kit of 6 - £13.50</p>
+        <button class="button4">Add to cart</button>
+      </div>
+      <div>
+        <img src="..\Images\3-3.png" alt="" />
+        <p class="p4_2">Raspberry Danish</p>
+        <p class="p4_3">Kit of 6 - £13.50</p>
+        <button class="button4">Add to cart</button>
+      </div>
+      <div class="visible4">
+        <img src="..\Images\3-4.png" alt="" />
+        <p class="p4_2">Pain Aux Raisins</p>
+        <p class="p4_3">Kit of 6 - £13.50</p>
+        <button class="button4">Add to cart</button>
+      </div>
+      <div class="visible5">
+        <img src="..\Images\3-5.png" alt="" />
+        <p class="p4_2">Apricot Danish</p>
+        <p class="p4_3">Kit of 6 - £13.50</p>
+        <button class="button4">Add to cart</button>
+      </div>
+      <div class="visible6">
+        <img src="..\Images\3-6.png" alt="" />
+        <p class="p4_2">Pain Au Chocolat</p>
+        <p class="p4_3">Kit of 6 - £13.50</p>
+        <button class="button4">Add to cart</button>
+      </div>
+    </div>
+    <button class="button4unvisible">Load more</button>
+  </section>
+  <section class="section5">
+    <img src="..\Images\section5.png" alt="" />
+  </section>
+  <section id="whoIsTarla" class="section6">
+    <div class="div6">
+      <img class="img6" src="..\Images\6-1.png" alt="" />
+      <p class="p6_1">Better than the bakery</p>
+      <p class="p6_2">
+        You’ll soon be making pastries to rival the best bakeries in town. We
+        use only the best ingredients for generous pastries that taste and
+        smell amazing. So good, that you’ll take all the credit.
+      </p>
+    </div>
+    <div class="div6">
+      <img class="img6" src="..\Images\6-2.png" alt="" />
+      <p class="p6_1">Planet-friendly packaging</p>
+      <p class="p6_2">
+        We’ve done everything we can to make sure our packaging has the
+        lightest footprint on the planet as possible. We’ve made sure
+        everything is recyclable, and use as little packaging as we can.
+      </p>
+    </div>
+    <div class="div6">
+      <img class="img6" src="..\Images\6-3.png" alt="" />
+      <p class="p6_1">Simple to bake at home</p>
+      <p class="p6_3">
+        We’ve done the hard work, so you don’t have to. Every pastry is easy
+        to make with our 3-step instructions and doesn’t require any special
+        tools – just an oven!
+      </p>
+    </div>
+  </section>
+  
+
+  <div class="line"></div>
+  <section class="section8">
+    <p class="H8">Join our community</p>
+    <p class="p8">and let's get baked</p>
+    <button class="button8"><a href="">Send us a message</a></button>
+  </section>
+  <script src="changeColor.js"></script>
+</body>
+<footer class="footer">
+  <div><img src="Frame.png" alt="" /></div>
+  <div class="divFooter">
+    <div class="PF">
+      <p class="Hf">Account</p>
+      <p>Sign Up</p>
+      <p>Log In</p>
+    </div>
+    <div class="PF">
+      <p class="Hf">Our company</p>
+      <p>Shop</p>
+      <a href="..\Tarla\aboutUs.html">Our story</a>
+      <p>Who is Tarla?</p>
+    </div>
+    <div class="PF">
+      <p class="Hf">Resources</p>
+      <p>FAQ</p>
+      <p>Refund Policy</p>
+      <p>Become an Influencer</p>
+      <p>Privacy Policy</p>
+      <p>Terms of Service</p>
+    </div>
+    <div class="PF">
+      <p class="Hf">Contacts</p>
+      <p>location</p>
+      <p>telephone</p>
+      <p>Github</p>
+      <p>E-mail</p>
+    </div>
+  </div>
+
+  <script src="..\Tarla\swaper.js"></script>
+</footer>
+
 </html>
