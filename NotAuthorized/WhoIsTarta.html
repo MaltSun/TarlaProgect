@@ -8,12 +8,40 @@
     <title>Who is tarla?</title>
   </head>
   <body class="body">
-    <header class="header">
+    <header id="top" class="header">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li>
+            <a class="menu__item" href="#termsOfService">Terms of Service</a>
+          </li>
+          <li>
+            <a class="menu__item" href="#privacyPolicy">Privacy Policy</a>
+          </li>
+          <li><a class="menu__item" href="#ourMessage">Our message</a></li>
+          <li class="li">
+            <a class="menu__item" href="#makeOrder">How to make an order</a>
+          </li>
+          <li class="li">
+            <a class="menu__item" href="#top">Top</a>
+          </li>
+        </ul>
+      </div>
+
       <ul class="navigation">
-        <li class="li"><a class="link" href="#termsOfService">Terms of Service</a></li>
-        <li class="li"><a class="link" href="#privacyPolicy">Privacy Policy</a></li>
+        <li class="li">
+          <a class="link" href="#termsOfService">Terms of Service</a>
+        </li>
+        <li class="li">
+          <a class="link" href="#privacyPolicy">Privacy Policy</a>
+        </li>
         <li class="li"><a class="link" href="#ourMessage">Our message</a></li>
-        <li class="li">          <a class="link" href="#makeOrder">How to make an order</a>        </li>
+        <li class="li">
+          <a class="link" href="#makeOrder">How to make an order</a>
+        </li>
       </ul>
 
       <button class="day-hught_switcher">
@@ -24,8 +52,8 @@
         <p>Log in</p>
       </div>
     </header>
-       <h1>Our message</h1>
-    <section id="ourMessege" class="section2">      
+    <h1>Our message</h1>
+    <section id="ourMessege" class="section2">
       <div class="div2">
         <div>
           <h3>Customer Health and Well-being First</h3>
@@ -36,10 +64,10 @@
             everyone, regardless of their dietary needs.
           </p>
         </div>
-        <img src="..\Images\6-3.png" alt="" />
+        <img class="img" src="..\Images\6-3.png" alt="" />
       </div>
       <div class="div2">
-        <img src="..\Images\6-2.png" alt="" />
+        <img class="img" src="..\Images\6-2.png" alt="" />
         <div>
           <h3>Preserving Nature for Future Generations</h3>
           <p class="p2">
@@ -50,7 +78,6 @@
             on the planet.
           </p>
         </div>
-        
       </div>
       <div class="div2">
         <div>
@@ -62,11 +89,11 @@
             meets our high standards of taste, safety, and ethics.
           </p>
         </div>
-        <img src="..\Images\6-1.png" alt="" />
+        <img class="img" src="..\Images\6-1.png" alt="" />
       </div>
     </section>
-    
-    <h1 id="makeOrder" >How to make an order</h1>
+
+    <h1 id="makeOrder">How to make an order</h1>
     <section class="section3">
       <div class="div3">
         <img class="img6" src="..\NotAuthorized\Images\1.png" alt="" />
@@ -110,53 +137,88 @@
       <div id="termsOfService" class="div1">
         <h1>Terms of Service</h1>
         <ul class="div1">
-          <li>Tarla Company collects personal information such as name, email address, and shipping address solely for the purpose of processing orders and providing customer support. </li>
-          <li>Personal information provided to Tarla Company is used only for order fulfillment, customer communication, and improving our services. </li>
-          <li>We implement industry-standard security measures to protect personal information from unauthorized access, alteration, disclosure, or destruction.</li>
-        <li>Tarla Company may use cookies to enhance user experience and track website usage.</li>
+          <li>
+            Tarla Company collects personal information such as name, email
+            address, and shipping address solely for the purpose of processing
+            orders and providing customer support.
+          </li>
+          <li>
+            Personal information provided to Tarla Company is used only for
+            order fulfillment, customer communication, and improving our
+            services.
+          </li>
+          <li>
+            We implement industry-standard security measures to protect personal
+            information from unauthorized access, alteration, disclosure, or
+            destruction.
+          </li>
+          <li>
+            Tarla Company may use cookies to enhance user experience and track
+            website usage.
+          </li>
         </ul>
       </div>
       <div id="privacyPolicy" class="div1">
         <h1>Privacy Policy</h1>
         <ul class="div1">
-          <li>By accessing or using any services provided by Tarla Company, users agree to be bound by these Terms of Service.</li>
-          <li>While we strive to provide accurate product descriptions and images, Tarla Company does not warrant that product descriptions or other content on our website are accurate, complete, reliable, current, or error-free.</li>
-          <li>Tarla Company will make every effort to ensure timely delivery of orders. However, we are not responsible for delays or issues caused by third-party shipping carriers.</li>
-          <li>Please refer to our Returns and Refunds Policy for information on returning products and requesting refunds.</li>
-          <li>Tarla Company will make every effort to ensure timely delivery of orders. However, we are not responsible for delays or issues caused by third-party shipping carriers.</li>
+          <li>
+            By accessing or using any services provided by Tarla Company, users
+            agree to be bound by these Terms of Service.
+          </li>
+          <li>
+            While we strive to provide accurate product descriptions and images,
+            Tarla Company does not warrant that product descriptions or other
+            content on our website are accurate, complete, reliable, current, or
+            error-free.
+          </li>
+          <li>
+            Tarla Company will make every effort to ensure timely delivery of
+            orders. However, we are not responsible for delays or issues caused
+            by third-party shipping carriers.
+          </li>
+          <li>
+            Please refer to our Returns and Refunds Policy for information on
+            returning products and requesting refunds.
+          </li>
+          <li>
+            Tarla Company will make every effort to ensure timely delivery of
+            orders. However, we are not responsible for delays or issues caused
+            by third-party shipping carriers.
+          </li>
         </ul>
       </div>
     </section>
   </body>
   <footer class="footer">
     <img src="..\Images\Frame.png" alt="logo" />
-    <div class="PF">
-      <p class="Hf">Account</p>
-      <p>Sign Up</p>
-      <p>Log In</p>
-    </div>
-    <div class="PF">
-      <p class="Hf" id="howItWorks">Our company</p>
-      <ul>
-        <li><a href="..\NotAuthorized\location.html">Location</a></li>
-        <li><a href="..\Tarla\aboutUs.html">Our story</a></li>
-        <li> <a href="..\NotAuthorized\WhoIsTarta.html">Who is Tarla?</a></li>
-      </ul>
+    <div class="divFooter">
+      <div class="PF">
+        <p class="Hf">Account</p>
+        <p>Sign Up</p>
+        <p>Log In</p>
       </div>
-    <div class="PF">
-      <p class="Hf">Resources</p>
-      <ul>
-        <li><a href="..\NotAuthorized\index.html">FAQ</a></li>
-        <li><a href="..\Tarla\aboutUs.html">Privacy Policy</a></li>
-        <li><a href="..\Tarla\aboutUs.html">Terms of Service</a></li>
-      </ul>    
-     </div>
-    <div class="PF">
-      <p class="Hf">Contacts</p>     
-      <p>telephone</p>
-      <p>Github</p>
-      <p>E-mail</p>
+      <div class="PF">
+        <p class="Hf" id="howItWorks">Our company</p>
+        <ul>
+          <li><a href="..\NotAuthorized\location.html">Location</a></li>
+          <li><a href="..\Tarla\aboutUs.html">Our story</a></li>
+          <li><a href="..\NotAuthorized\WhoIsTarta.html">Who is Tarla?</a></li>
+        </ul>
+      </div>
+      <div class="PF">
+        <p class="Hf">Resources</p>
+        <ul >
+          <li ><a href="..\NotAuthorized\index.html">FAQ</a></li>
+          <li><a href="..\Tarla\aboutUs.html">Privacy Policy</a></li>
+          <li><a href="..\Tarla\aboutUs.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="PF">
+        <p class="Hf">Contacts</p>
+        <p>telephone</p>
+        <p>Github</p>
+        <p>E-mail</p>
+      </div>
     </div>
-  </div>
-   </footer>
+  </footer>
 </html>
