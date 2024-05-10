@@ -11,10 +11,30 @@
 <body class="body">
     <header class="header">
       <img src="..\Images\Frame.png" alt="logo" />
-        <ul class="navigation">
-            <li class="li"><a class="link" href="#shop"> Shop</a></li>
-            <li class="li"><a class="link" href="#howItWorks">How it works?</a></li>
-            <li class="li"><a class="link" href="#whoIsTarla">Who is Tarla?</a></li>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li class="li">
+            <a class="menu__item" href="#top">Top</a>
+          </li>
+          <li>
+            <a class="menu__item" href="#ingredient"> Ingredients</a></li>
+          </li>
+          <li>
+            <a class="menu__item" href="#location">Location</a></li>
+          </li>
+          <li><a class="menu__item" href="#legend">Legend</a></li>
+          
+        </ul>
+      </div>
+      
+        <ul id="top" class="navigation">
+            <li class="li"><a class="link" href="#ingredient"> Ingredients</a></li>
+            <li class="li"><a class="link" href="#location">Location</a></li>
+            <li class="li"><a class="link" href="#legend">Legend</a></li>
           </ul>
       
           <button class="switcher">
@@ -29,7 +49,7 @@
         
             <img class="img" src="..\Images\aboutUs1.png" alt="" />
             <div class="text">
-              <h1 class="textH1">Amazing Ingredients</h1>
+              <h1 id="ingredient" class="textH1">Amazing Ingredients</h1>
               <p class="textP">
                 We like to keep things simple and authentic. We’ve sourced the very
                 best from the very best, from our Poitou-Charentes butter to our
@@ -40,7 +60,7 @@
     </section>
     <section class=" map">
       <div class="text">
-        <h1 class="textH1">Our location in USA</h1>
+        <h1 id="location" class="textH1">Our location in USA</h1>
         <p class="textP">
           We like to keep things simple and authentic. We’ve sourced the very
           best from the very best, from our Poitou-Charentes butter to our
@@ -53,7 +73,7 @@
     <section class="section">                    
           <img class="img" src="..\Images\aboutUs2.png" alt="" /> 
             <div class="text">
-              <h1 class="textH1">Legendary Bakes</h1>
+              <h1 id="legend" class="textH1">Legendary Bakes</h1>
               <p class="textP">
                 The inspiration for our brand and our guiding principles is the
                 Legend of El Tarlà. A young man who brought joy to the isolated
