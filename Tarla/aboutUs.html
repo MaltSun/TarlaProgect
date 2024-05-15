@@ -3,13 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="aboutUs.css" />
+    <title>About us</title>
+    <link rel="stylesheet" href="..\Tarla\aboutUs.css" />
   </head>
-  <header class="header">
-    <img src="..\Images\Frame.png" alt="logo" />
-   
-    <button class="day-hught_switcher">
+    <header class="header">
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#legend">Legend</a></li>
+        <li><a class="menu__item" href="#privacyPolicy">Privacy Policy</a></li>
+        <li><a class="menu__item" href="#location">Location</a></li>
+      </ul>
+    </div>
+    <a href="..\Tarla\index.html"><img src="..\Images\Frame.png" alt="logo" /></a>
+    
+    <ul class="navigation">
+      <li class="li"><a class="link" href="#legend">Legend</a></li>
+      <li class="li"><a class="link" href="#privacyPolicy">Privacy Policy</a></li>
+      <li class="li"><a class="link" href="#location">Location</a></li>
+    </ul>
+
+    <button class="switcher">
       <img src="..\Images\Day-Night.png" alt="Rectangle.png" />
     </button>
     <div class="logIn">
@@ -22,7 +39,7 @@
       <div class="paragraph2">
         <img class="img" src="..\Images\aboutUs1.png" alt="" />
         <div class="text">
-          <h1 class="textH1">Amazing Ingredients</h1>
+          <h3>Amazing Ingredients</h1>
           <p class="textP">
             We like to keep things simple and authentic. We’ve sourced the very
             best from the very best, from our Poitou-Charentes butter to our
@@ -30,47 +47,111 @@
           </p>
         </div>
       </div>
+   </section>
+   <section  class="aboutTarla">
+    <h3>A little bit about the bakery...</h1>
+    <p class="textP textAboutTarla">I was looking for the same taste, so I decided to bake high-quality and healthy sourdough bread only from natural ingredients without the use of improvers, special dry mixes, using a minimum of ingredients: flour, water and salt. He named the bakery with his last name. I say by this that I bake as for myself.
+    </p>
+    <p class="textP textAboutTarla">
+      Fresh sourdough bread, croissants and other pastries with delivery in Minsk, as well as at branded points of sale and in restaurants of our partners. Our bread is served in excellent establishments in Minsk. The trust in our products from such customers once again confirms the excellent quality of our work.
+    </p>
+    </section>
+   <img class="fone" src="..\Images\fone2.jpg" alt="Fone" />  
+      <section class="section">
       <div class="paragraph">
         <div class="text">
-          <h1 class="textH1">Legendary Bakes</h1>
+          <h3 id="legend">Legendary Bakes</h1>
           <p class="textP">
             The inspiration for our brand and our guiding principles is the
             Legend of El Tarlà. A young man who brought joy to the isolated
             citizens of Girona during an outbreak of the plague.
           </p>
         </div>
-        <img class="img" src="..\Images\aboutUs2.png" alt="" />
+        <img class="fone" src="..\Images\aboutUs2.png" alt="" />
+      </div>
+    </section>
+    <section class="section1">
+      <div class="div1">
+        <h3>Terms of Service</h1>
+        <ul class="textP">
+          <li>
+            Tarla Company collects personal information such as name, email
+            address, and shipping address solely for the purpose of processing
+            orders and providing customer support.
+          </li>
+          <li>
+            Personal information provided to Tarla Company is used only for
+            order fulfillment, customer communication, and improving our
+            services.
+          </li>
+          <li>
+            We implement industry-standard security measures to protect personal
+            information from unauthorized access, alteration, disclosure, or
+            destruction.
+          </li>
+          <li>
+            Tarla Company may use cookies to enhance user experience and track
+            website usage.
+          </li>
+        </ul>
+      </div>
+      
+      <div id="privacyPolicy" class="div1">
+        <h3 >Privacy Policy</h1>
+        <ul class="textP">
+          <li>
+            By accessing or using any services provided by Tarla Company, users
+            agree to be bound by these Terms of Service.
+          </li>
+          <li>
+            While we strive to provide accurate product descriptions and images,
+            Tarla Company does not warrant that product descriptions or other
+            content on our website are accurate, complete, reliable, current, or
+            error-free.
+          </li>
+          <li>
+            Tarla Company will make every effort to ensure timely delivery of
+            orders. However, we are not responsible for delays or issues caused
+            by third-party shipping carriers.
+          </li>
+          <li>
+            Please refer to our Returns and Refunds Policy for information on
+            returning products and requesting refunds.
+          </li>
+          <li>
+            Tarla Company will make every effort to ensure timely delivery of
+            orders. However, we are not responsible for delays or issues caused
+            by third-party shipping carriers.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class=" map">
+      <div class="text">
+        <h3 id="location">Our location in USA</h1>
+        <div class="unvisibleImg"><script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=630&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        
+        <p class="textP">
+          We like to keep things simple and authentic. We’ve sourced the very
+          best from the very best, from our Poitou-Charentes butter to our
+          Valrhona chocolate batons.
+        </p>
       </div>
     </section>
   </body>
   <footer class="footer">
-    <div><img src="Frame.png" alt="" /></div>
-    <div class="divFooter">
-      <div class="PF">
-        <p class="Hf">Account</p>
-        <p>Sign Up</p>
-        <p>Log In</p>
-      </div>
-      <div class="PF">
-        <p class="Hf">Our company</p>
-        <p>Shop</p>
-        <p>Our story</p>
-        <p>Who is Tarla?</p>
-      </div>
-      <div class="PF">
-        <p class="Hf">Resources</p>
-        <p>FAQ</p>
-        <p>Privacy Policy</p>
-      </div>
-      <div class="PF">
-        <p class="Hf">Contacts</p>
-        <a href="..\Tarla\location.html">location</a> 
-        <p>telephone</p>
-        <p>Github</p>
-        <p>E-mail</p>
-      </div>
+    <div class="icon">
+      <img src="..\Images\phone.png" alt="Telephone">
+      <img src="..\Images\github.png" alt="Github">
+      <img src="..\Images\e-mail.png" alt="E-mail">
     </div>
-
-    <script src="..\Tarla\swaper.js"></script>
-  </footer>
+<div class="divfooter" > 
+  <a class="link" href="..\Tarla\index.html">Tarla</a>
+  <a class="link" href="..\Tarla\index.html">How to use</a>
+  <a class="link" href="..\Tarla\catalog.html">Catalog</a>
+  <a class="link" href="..\Tarla\catalog.html">Prices</a>
+</div>
+<script src="..\Tarla\swaper.js"></script>
+  </footer> 
 </html>
