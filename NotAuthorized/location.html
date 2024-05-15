@@ -9,8 +9,9 @@
     <title>We located</title>
 </head>
 <body class="body">
-    <header class="header">
-      <img src="..\Images\Frame.png" alt="logo" />
+    <header id="top" class="header">
+      <a href="..\NotAuthorized\index.html"><img src="..\Images\Frame.png" alt="logo" /></a>
+      
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
@@ -27,11 +28,10 @@
             <a class="menu__item" href="#location">Location</a></li>
           </li>
           <li><a class="menu__item" href="#legend">Legend</a></li>
-          
-        </ul>
+          </ul>
       </div>
       
-        <ul id="top" class="navigation">
+        <ul class="navigation">
             <li class="li"><a class="link" href="#ingredient"> Ingredients</a></li>
             <li class="li"><a class="link" href="#location">Location</a></li>
             <li class="li"><a class="link" href="#legend">Legend</a></li>
@@ -50,6 +50,7 @@
             <img class="img" src="..\Images\aboutUs1.png" alt="" />
             <div class="text">
               <h1 id="ingredient" class="textH1">Amazing Ingredients</h1>
+              <img class="unvisibleImg" src="..\Images\aboutUs1.png" alt="" />
               <p class="textP">
                 We like to keep things simple and authentic. We’ve sourced the very
                 best from the very best, from our Poitou-Charentes butter to our
@@ -61,19 +62,25 @@
     <section class=" map">
       <div class="text">
         <h1 id="location" class="textH1">Our location in USA</h1>
+        <div class="unvisibleImg"><script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=630&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        
         <p class="textP">
           We like to keep things simple and authentic. We’ve sourced the very
           best from the very best, from our Poitou-Charentes butter to our
           Valrhona chocolate batons.
         </p>
       </div>
-      <script class="img" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=630&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-</section>
+      <div class="img">
+        <script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=630&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      </section>
     </section>
-    <section class="section">                    
+    <section class="section">                          
           <img class="img" src="..\Images\aboutUs2.png" alt="" /> 
             <div class="text">
               <h1 id="legend" class="textH1">Legendary Bakes</h1>
+              <img class="unvisibleImg" src="..\Images\aboutUs2.png" alt="" /> 
               <p class="textP">
                 The inspiration for our brand and our guiding principles is the
                 Legend of El Tarlà. A young man who brought joy to the isolated
@@ -83,36 +90,18 @@
                   
     </section>
     <footer class="footer">
-      <img src="..\Images\Frame.png" alt="logo" />
-        <div class="divFooter">
-          <div class="PF">
-            <p class="Hf">Account</p>
-            <p>Sign Up</p>
-            <p>Log In</p>
-          </div>
-          <div class="PF">
-            <p class="Hf" id="howItWorks">Our company</p>
-            <ul>
-              <li><a href="..\NotAuthorized\location.html">Location</a></li>
-              <li><a href="..\Tarla\aboutUs.html">Our story</a></li>
-              <li> <a href="..\NotAuthorized\WhoIsTarta.html">Who is Tarla?</a></li>
-            </ul>
-            </div>
-          <div class="PF">
-            <p class="Hf">Resources</p>
-            <ul>
-              <li><a href="..\NotAuthorized\index.html">FAQ</a></li>
-              <li><a href="..\Tarla\aboutUs.html">Privacy Policy</a></li>
-              <li><a href="..\Tarla\aboutUs.html">Terms of Service</a></li>
-            </ul>    
-           </div>
-          <div class="PF">
-            <p class="Hf">Contacts</p>
-            <p>telephone</p>
-            <p>Github</p>
-            <p>E-mail</p>
-          </div>
-        </div>    
-      </footer>
+      <div class="icon">
+        <img src="..\Images\phone.png" alt="Telephone">
+        <img src="..\Images\github.png" alt="Github">
+        <img src="..\Images\e-mail.png" alt="E-mail">
+      </div>
+  <div class="divfooter" > 
+    <a class="link" href="..\NotAuthorized\WhoIsTarta.html">FAQ</a>
+    <a class="link" href="..\NotAuthorized\index.html">Tarla</a>
+    <a class="link" href="..\NotAuthorized\WhoIsTarta.html">Terms of Service</a>
+    <a class="link" href="..\NotAuthorized\WhoIsTarta.html">Privacy Policy</a>
+  </div>
+  <script src="..\Tarla\swaper.js"></script>
+    </footer> 
 </body>
 </html>

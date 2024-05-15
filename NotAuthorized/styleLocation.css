@@ -18,6 +18,19 @@
 .li {
   list-style-type: none;
 }
+.link {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  cursor: none;
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12.802px; /* 80.01% */
+  text-transform: uppercase;
+}
 .body {
   max-width: 1440px;
   display: flex;
@@ -50,9 +63,10 @@
   justify-content: flex-start;
   gap: 16px;
   visibility: visible;
+  margin: 0px;
 }
 .hamburger-menu {
-  visibility: hidden;
+  display: none;
 }
 
 /* скрываем чекбокс */
@@ -146,7 +160,7 @@
   padding-bottom: 40px;
   width: 100%;
   height: auto;
-    display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -168,15 +182,16 @@
   flex-direction: column;
   gap: 26px;
   justify-content: center;
-  
 }
 .textP {
+  height: auto;
   color: #000;
-  font-family: Roboto;
-  font-size: 26px;
+  font-family: "DM Sans";
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40.005px; /* 153.865% */
+  line-height: 24.003px; /* 150.019% */
+  text-transform: uppercase;
 }
 
 .textH1 {
@@ -189,42 +204,33 @@
   text-transform: uppercase;
   margin-left: initial;
 }
+
 .footer {
-  width: 98%;
+  width: 100%;
+  height: auto;
+  padding: 70px 0px 60px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.divfooter {
+  width: 60%;
   height: auto;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   flex-direction: row;
-  gap: 0px;
-  padding: 60px 17px 0px 15px;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-.divFooter {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
-  flex: wrap;
-}
-.Hf {
-  color: #000;
-  font-family: Roboto;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36.018px; /* 163.72% */
-}
-.PF {
-  color: #000;
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24.003px; /* 150.019% */
-  text-transform: uppercase;
 }
 .map {
   width: 90%;
@@ -237,4 +243,7 @@
   padding: 55px;
   flex-wrap: wrap;
   background: #f6ddcadc;
+}
+.unvisibleImg {
+  display: none;
 }
