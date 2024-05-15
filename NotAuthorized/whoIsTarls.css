@@ -69,6 +69,15 @@
   align-items: flex-start;
   justify-content: center;
 }
+.ul1 {
+  width: 50%;
+  height: auto;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 .section2 {
   width: 90%;
   height: auto;
@@ -146,56 +155,34 @@
   line-height: 24.003px; /* 150.019% */
   text-transform: uppercase;
 }
-.footer {
-  width: 98%;
+.footer{
+  width: 100%;
   height: auto;
+  padding:70px 0px 60px 0px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-  gap: 170px;
-  padding: 105px 17px 0px 15px;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-.divFooter {
-  width: 70%;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 15px 20px;
-}
-
-.Hf {
-  color: #000;
-  font-family: Roboto;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36.018px; /* 163.72% */
-}
-.PF {
-  color: #000;
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24.003px; /* 150.019% */
-  text-transform: uppercase;
-}
-
-.PF a {
-  text-decoration: none;
-}
-
-.PF ul {
-  list-style-type: none;
-  padding-left: 0; 
-  color: #000;
-}
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+    }
+    .icon{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 200px;
+      justify-content: center;
+      align-items:center;
+     gap: 10px;
+    }
+    .divfooter {
+      width: 60%;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    
+    }
 .hamburger-menu {
   visibility: hidden;
 }
@@ -279,36 +266,4 @@
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
-}
-@media screen and (max-width: 900px) {
-  .hamburger-menu {
-    visibility: visible;
-  }
-  .navigation {
-    display: none;
-    justify-content: flex-end;
-  }
-  
-}
-@media screen and (max-width: 725px) {
-  .img{
-    display: none;
-  }
-  .footer{
-    gap: 40px;
-  }
-}
-@media screen and (max-width: 590px) {
-  .section1{
-flex-direction:column;
-  }
-  .div1{
-    width: 90%;
-  }
-}
-@media screen and (max-width: 340px) {
-  .section3{
-    padding: 5px;
-    justify-content: center;
-  }
 }
