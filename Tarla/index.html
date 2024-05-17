@@ -21,38 +21,59 @@
         <span></span>
       </label>
       <ul class="menu__box">
-        <li><a class="menu__item" href="#shop">Shop</a></li>
-        <li><a class="menu__item" href="#howItWorks">How it works?</a></li>
-        <li><a class="menu__item" href="#whoIsTarla">Who is Tarla?</a></li>
+        <li>
+          <a data-i18="headerShop" class="menu__item" href="#shop">Shop</a>
+        </li>
+        <li>
+          <a data-i18="headerHowItWork" class="menu__item" href="#howItWorks"
+            >How it works?</a
+          >
+        </li>
+        <li>
+          <a data-i18="headerWhoIsTarla" class="menu__item" href="#whoIsTarla"
+            >Who is Tarla?</a
+          >
+        </li>
       </ul>
     </div>
     <img class="logo" src="..\Images\Frame.png" alt="logo" />
     <ul class="navigation">
-      <li class="li"><a class="link" href="#shop"> Shop</a></li>
-      <li class="li"><a class="link" href="#howItWorks">How it works?</a></li>
-      <li class="li"><a class="link" href="#whoIsTarla">Who is Tarla?</a></li>
+      <li class="li">
+        <a data-i18="headerShop" class="link" href="#shop"> Shop</a>
+      </li>
+      <li class="li">
+        <a data-i18="headerHowItWork" class="link" href="#howItWorks"
+          >How it works?</a
+        >
+      </li>
+      <li class="li">
+        <a data-i18="headerWhoIsTarla" class="link" href="#whoIsTarla"
+          >Who is Tarla?</a
+        >
+      </li>
     </ul>
 
-    <button class="switcher">
-      <img src="..\Images\Day-Night.png" alt="Rectangle.png" />
-    </button>
+    <button data-i18="en" class="switcher">en</button>
+    <button data-i18="ru" class="switcher">ru</button>
     <div class="logIn">
       <img src="..\Images\Person.svg" alt="Rectangle.png" />
-      <p>Log in</p>
+      <p data-i18="LogIn">Log in</p>
     </div>
   </header>
 
   <body class="body">
     <section class="section1 dayMode">
       <div class="div1">
-        <p class="H1">Fresh pastry kits</p>
-        <p class="P1">
+        <p data-i18="FreshPastryKits" class="H1">Fresh pastry kits</p>
+        <p data-i18="Smells" class="P1">
           Bringing the smells and tastes of your favourite patisserie to your
           home. Our kits have everything you need to easily make killer pastries
           every time. We’ve done the tricky bits so all you need to do is roll,
           proof and bake!
         </p>
-        <button class="button1"><a href="..\Tarla\catalog.html">Shop pastry kits</a></button>
+        <button data-i18="Catalog" class="button1">
+          <a href="..\Tarla\catalog.html">Catalog</a>
+        </button>
       </div>
       <div class="swiper mySwiper img1">
         <div class="swiper-wrapper">
@@ -79,92 +100,108 @@
       </div>
     </section>
     <section id="howItWorks" class="section2">
-      <p class="p2">How it works</p>
+      <p data-i18="headerHowItWork" class="p2">How it works</p>
       <div class="div2">
         <div class="img2">
           <img src="..\Images\1.png" alt="" />
-          <p class="H2_2">Choose your fave</p>
-          <p class="p2_2">
+          <p data-i18="ChoseYourFav" class="H2_2">Choose your fave</p>
+          <p data-i18="ChoseYourFaveDef" class="p2_2">
             This sounds easier than it's going to be. We've got all the classics
             on here, so now it's over to you.
           </p>
         </div>
         <div class="img2">
           <img src="..\Images\2.png" alt="" />
-          <p class="H2">Ding dong</p>
-          <p class="p2_2">
+          <p data-i18="DingDong" class="H2">Ding dong</p>
+          <p data-i18="DingDongDif" class="p2_2">
             Next you'll get a beautiful little package delivered to your door,
             on a day and time slot that you choose.
           </p>
         </div>
         <div class="img2">
           <img src="..\Images\3.png" alt="" />
-          <p class="H2">Get baked</p>
-          <p class="p2_2">
+          <p data-i18="GetBaked" class="H2">Get baked</p>
+          <p data-i18="GetBakedDif" class="p2_2">
             Take your fresh pastry sheet and fillings, learn our pro techniques
             then never buy a stale pastry ever again.
           </p>
         </div>
         <div class="img2">
           <img src="..\Images\4.png" alt="" />
-          <p class="H2_2">Take the credit</p>
-          <p class="p2_2">
+          <p data-i18="takeTheCredit" class="H2_2">Take the credit</p>
+          <p data-i18="takeTheCreditDif" class="p2_2">
             It was all you, nudge-nudge wink-wink. We're just happy to be your
             loyal side-kick.
           </p>
         </div>
       </div>
-      <button class="button2"><a href="..\Tarla\catalog.html">Read more</a></button>
+      <button data-i18="ReadMore" class="button2">
+        <a href="..\Tarla\catalog.html">Read more</a>
+      </button>
     </section>
     <section class="section3">
       <img class="img3" src="..\Images\img3.png" alt="" />
       <div class="div3">
-        <p class="p3">
+        <p data-i18="FreshlyBaked" class="p3">
           Freshly baked means fresh bakery smells filling your home, warm oozey
           pastries on your plates, and never needing to get out of your PJs.
         </p>
         <img class="img3UnVisible" src="..\Images\img3.png" alt="" />
-        <button class="button2"><a href="..\Tarla\catalog.html">Shop pastry kits</a></button>
+        <button data-i18="FreshPastryKits" class="button2">
+          <a href="..\Tarla\catalog.html">Shop pastry kits</a>
+        </button>
       </div>
     </section>
     <section id="shop" class="section4">
-      <p class="H4">Shop pastry kits</p>
+      <p data-i18="FreshPastry" class="H4">Shop pastry kits</p>
       <div class="div4">
         <div>
           <img class="img4" src="..\Images\3-1.png" alt="" />
-          <p class="p4_2">All-Butter Croissant</p>
-          <p class="p4_3">Kit of 6 - £12</p>
-          <button class="button4"><a href="..\Tarla\catalog.html">Information</a></button>
+          <p data-i18="AllButter" class="p4_2">All-Butter Croissant</p>
+          <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
+          <button data-i18="Information" class="button4">
+            <a href="..\Tarla\catalog.html">Information</a>
+          </button>
         </div>
         <div>
           <img class="img4" src="..\Images\3-2.png" alt="" />
-          <p class="p4_2">Almond Croissant</p>
-          <p class="p4_3">Kit of 6 - £13.50</p>
-          <button class="button4"><a href="..\Tarla\catalog.html">Information</a></button>
+          <p data-i18="Almond" class="p4_2">Almond Croissant</p>
+          <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
+          <button data-i18="Information" class="button4">
+            <a href="..\Tarla\catalog.html">Information</a>
+          </button>
         </div>
         <div>
           <img class="img4" src="..\Images\3-3.png" alt="" />
-          <p class="p4_2">Raspberry Danish</p>
-          <p class="p4_3">Kit of 6 - £13.50</p>
-          <button class="button4"><a href="..\Tarla\catalog.html">Information</a></button>
+          <p data-i18="Raspberry" class="p4_2">Raspberry Danish</p>
+          <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
+          <button data-i18="Information" class="button4">
+            <a href="..\Tarla\catalog.html">Information</a>
+          </button>
         </div>
         <div class="visible">
           <img class="img4" src="..\Images\3-4.png" alt="" />
-          <p class="p4_2">Pain Aux Raisins</p>
-          <p class="p4_3">Kit of 6 - £13.50</p>
-          <button class="button4"><a href="..\Tarla\catalog.html">Information</a></button>
+          <p data-i18="PainAuxPaisins" class="p4_2">Pain Aux Raisins</p>
+          <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
+          <button data-i18="Information" class="button4">
+            <a href="..\Tarla\catalog.html">Information</a>
+          </button>
         </div>
         <div class="visible">
           <img class="img4" src="..\Images\3-5.png" alt="" />
-          <p class="p4_2">Apricot Danish</p>
-          <p class="p4_3">Kit of 6 - £13.50</p>
-          <button class="button4"><a href="..\Tarla\catalog.html">Information</a></button>
+          <p data-i18="Apricot" class="p4_2">Apricot Danish</p>
+          <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
+          <button data-i18="Information" class="button4">
+            <a href="..\Tarla\catalog.html">Information</a>
+          </button>
         </div>
         <div class="visible">
           <img class="img4" src="..\Images\3-6.png" alt="" />
-          <p class="p4_2">Pain Au Chocolat</p>
-          <p class="p4_3">Kit of 6 - £13.50</p>
-          <button class="button4"><a href="..\Tarla\catalog.html">Information</a></button>
+          <p data-i18="PainAuChocolate" class="p4_2">Pain Au Chocolat</p>
+          <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
+          <button data-i18="Information" class="button4">
+            <a href="..\Tarla\catalog.html">Information</a>
+          </button>
         </div>
       </div>
     </section>
@@ -174,8 +211,8 @@
     <section id="whoIsTarla" class="section6">
       <div class="div6">
         <img class="img6" src="..\Images\6-1.png" alt="" />
-        <p class="p6_1">Better than the bakery</p>
-        <p class="p6_2">
+        <p data-i18="BetterThanbakery" class="p6_1">Better than the bakery</p>
+        <p data-i18="BetterThanbakeryDif" class="p6_2">
           You’ll soon be making pastries to rival the best bakeries in town. We
           use only the best ingredients for generous pastries that taste and
           smell amazing. So good, that you’ll take all the credit.
@@ -183,8 +220,8 @@
       </div>
       <div class="div6">
         <img class="img6" src="..\Images\6-2.png" alt="" />
-        <p class="p6_1">Planet-friendly packaging</p>
-        <p class="p6_2">
+        <p data-i18="PlanetFriendly" class="p6_1">Planet-friendly packaging</p>
+        <p data-i18="PlanetFriendlyDif" class="p6_2">
           We’ve done everything we can to make sure our packaging has the
           lightest footprint on the planet as possible. We’ve made sure
           everything is recyclable, and use as little packaging as we can.
@@ -192,8 +229,8 @@
       </div>
       <div class="div6">
         <img class="img6" src="..\Images\6-3.png" alt="" />
-        <p class="p6_1">Simple to bake at home</p>
-        <p class="p6_3">
+        <p data-i18="SimpleBake" class="p6_1">Simple to bake at home</p>
+        <p data-i18="SimpleBakeDif" class="p6_3">
           We’ve done the hard work, so you don’t have to. Every pastry is easy
           to make with our 3-step instructions and doesn’t require any special
           tools – just an oven!
@@ -203,25 +240,29 @@
 
     <div class="line"></div>
     <section class="section8">
-      <p class="H8">Join our community</p>
-      <p class="p8">and let's get baked</p>
-      <button class="button8"><a href="">Send us a message</a></button>
+      <p data-i18="JoinOurCommunity" class="H8">Join our community</p>
+      <p data-i18="GetBaked" class="p8">and let's get baked</p>
+      <button data-i18="SendUsMessage" class="button8">
+        <a href="">Send us a message</a>
+      </button>
     </section>
     <script src="changeColor.js"></script>
-    
   </body>
   <footer class="footer">
     <div class="icon">
-      <img src="..\Images\phone.png" alt="Telephone">
-      <a href="https://github.com/MaltSun/TarlaProgect"><img src="..\Images\github.png" alt="Github"/></a>
-      <img src="..\Images\e-mail.png" alt="E-mail">
+      <img src="..\Images\phone.png" alt="Telephone" />
+      <a href="https://github.com/MaltSun/TarlaProgect"
+        ><img src="..\Images\github.png" alt="Github"
+      /></a>
+      <img src="..\Images\e-mail.png" alt="E-mail" />
     </div>
-<div class="divfooter" > 
-  <a class="link" href="..\Tarla\aboutUs.html">FAQ</a>
-  <a class="link" href="..\Tarla\aboutUs.html">Location</a>
-  <a class="link" href="..\Tarla\catalog.html">Catalog</a>
-  <a class="link" href="..\Tarla\catalog.html">Prices</a>
-</div>
-<script src="..\Tarla\swaper.js"></script>
-  </footer> 
+    <div class="divfooter">
+      <a data-i18="FAQ" class="link" href="..\Tarla\aboutUs.html">FAQ</a>
+      <a data-i18="Location" class="link" href="..\Tarla\aboutUs.html">Location</a>
+      <a data-i18="Catalog" class="link" href="..\Tarla\catalog.html">Catalog</a>
+      <a data-i18="Price" class="link" href="..\Tarla\catalog.html">Prices</a>
+    </div>
+    <script src="..\Tarla\swaper.js"></script>
+    <script src="..\changeLanguage.js"></script>
+  </footer>
 </html>
