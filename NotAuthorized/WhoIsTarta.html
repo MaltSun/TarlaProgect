@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="..\NotAuthorized\medialStyleWhoIsTarls.css" />
     <title>Who is tarla?</title>
   </head>
-  <body class="body">
-    <header id="top" class="header">
+  <body class="body theme-element">
+    <header id="top" class="header theme-element">
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
-        <ul class="menu__box">
+        <ul class="menu__box theme-specialElement">
           <li>
             <a class="menu__item" href="#termsOfService">Terms of Service</a>
           </li>
@@ -31,7 +31,7 @@
         </ul>
       </div>
       <a href="..\NotAuthorized\index.html"
-        ><img src="..\Images\Frame.png" alt="logo"
+        ><img class="logo" src="..\Images\Frame.png" alt="logo"
       /></a>
       <ul class="navigation">
         <li class="li">
@@ -45,17 +45,28 @@
           <a class="link" href="#makeOrder">How to make an order</a>
         </li>
       </ul>
-
-      <button class="day-hught_switcher">
-        <img src="..\Images\Day-Night.png" alt="Rectangle.png" />
-      </button>
-      <div class="logIn">
-        <img src="..\Images\Person.svg" alt="Rectangle.png" />
-        <p>Log in</p>
+      <div class="switchers">
+        <button data-i18="en" class="switcher changeButton theme-blueButton">
+          <img src="..\Images\UK.png" alt="light" />
+        </button>
+        <button data-i18="ru" class="switcher changeButton theme-blueButton">
+          <img src="..\Images\russia.png" alt="light" />
+        </button>
       </div>
+      <div class="switchers">
+        <button class="changeButton theme-blueButton" id="light-theme-btn">
+          <img src="..\Images\sun.png" alt="light" />
+        </button>
+        <button class="changeButton theme-blueButton" id="dark-theme-btn">
+          <img src="..\Images\night.png" alt="light" />
+        </button>
+      </div>
+      <button class="logIn">
+        <img src="..\Images\person.png" alt="light" />
+      </button>
     </header>
-    <h2 id="ourMessege">Our message</h1>
-    <section class="section2">
+    <h2 class="theme-element" id="ourMessege">Our message</h1>
+    <section class="section2 theme-element">
       <div class="div2">
         <div>
           <h3>Customer Health and Well-being First</h3>
@@ -95,8 +106,8 @@
       </div>
     </section>
 
-    <h2 id="makeOrder">How to make an order</h1>
-    <section class="section3">
+    <h2 class="theme-element" id="makeOrder">How to make an order</h1>
+    <section class="section3 theme-element">
       <div class="div3">
         <img class="img6" src="..\NotAuthorized\Images\1.png" alt="" />
         <h3 class="p6_1">Explore Our Selection</h3>
@@ -135,7 +146,7 @@
         </p>
       </div>
     </section>
-    <section class="section1">
+    <section class="section1 theme-element">
       <div id="termsOfService" class="div1">
         <h2>Terms of Service</h1>
         <ul class="ul1">
@@ -160,7 +171,7 @@
           </li>
         </ul>
       </div>
-      <div id="privacyPolicy" class="div1">
+      <div id="privacyPolicy" class="div1 theme-element">
         <h2>Privacy Policy</h1>
         <ul class="ul1">
           <li>
@@ -191,7 +202,7 @@
       </div>
     </section>
   </body>
-  <footer class="footer">
+  <footer class="footer theme-element" >
     <div class="icon">
       <img src="..\Images\phone.png" alt="Telephone">
       <a href="https://github.com/MaltSun/TarlaProgect"><img src="..\Images\github.png" alt="Github"/></a>
@@ -203,6 +214,6 @@
   <a class="link" href="..\NotAuthorized\index.html">Facts</a>
   <a class="link" href="..\NotAuthorized\index.html">How use</a>
 </div>
-<script src="..\Tarla\swaper.js"></script>
+<script src="..\changeColor.js"></script>
   </footer> 
 </html>

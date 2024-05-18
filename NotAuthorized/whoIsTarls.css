@@ -5,9 +5,7 @@
 .link {
   text-decoration: none;
   list-style: none;
-  color: black;
   cursor: none;
-  color: #000;
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
@@ -41,6 +39,63 @@
   gap: 16px;
   visibility: visible;
 }
+.theme-element.dayMode {
+  background: #f5ede7 !important;
+  color: #000 !important;
+}
+
+.theme-element.nightMode {
+  background: #261d18 !important;
+  color: #7a6755 !important;
+}
+
+.theme-specialElement.nightMode {
+  background: #16110e !important;
+  color: #7a6755 !important;
+}
+
+.theme-specialElement.dayMode {
+  background: #ffc3a0 !important;
+  color: #000 !important;
+}
+
+.theme-button.dayMode {
+  border: 1px solid #000 !important;
+}
+
+.theme-button.nightMode {
+  border: 1px solid #7a6755 !important;
+  color: #7a6755; 
+}
+
+.theme-blueButton.dayMode {
+  border: 1px solid #0126de !important;
+  color: #0126de !important;
+}
+
+.theme-blueButton.nightMode {
+  border: 1px solid #5f74e2 !important;
+  color: #5f74e2 !important;
+  background:  #16110e !important;
+}
+.switchers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  gap: 5px;
+ }
+ .changeButton{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.002px; /* 154.553% */
+  border-radius: 15px;
+ }
 .body {
   max-width: 1440px;
   display: flex;
@@ -101,7 +156,6 @@
 .p2 {
   max-width: 350px;
   height: auto;
-  color: #000;
   font-family: "DM Sans";
   font-size: 13px;
   font-style: normal;
@@ -112,18 +166,15 @@
 .section3 {
   width: 90%;
   height: auto;
-
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
-
   padding: 20px;
 }
 .h1 {
   width: 90%;
   background: #ecdcd16a;
-  color: #000;
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
@@ -136,7 +187,6 @@
   min-height: 463px;
   padding: 25px;
   border-radius: 20px;
-  border: 1px solid #000;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -147,7 +197,6 @@
 .p3 {
   max-width: 250px;
   height: auto;
-  color: #000;
   font-family: "DM Sans";
   font-size: 13px;
   font-style: normal;
@@ -242,7 +291,6 @@
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: #333;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
