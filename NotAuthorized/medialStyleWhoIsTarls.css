@@ -2,6 +2,9 @@
   .ul1 {
     width: 70%;
   }
+  .header{
+    width: 90%
+  }
 }
 @media screen and (max-width: 900px) {
   .hamburger-menu {
@@ -12,26 +15,7 @@
     justify-content: flex-end;
   }
 }
-/*@media screen and (max-width: 995px) {
-   .section1{
-    margin: 0px;
-   }
-    .ul1{
-      width: 180%;
-    }
-    
-  }
-  @media screen and (max-width: 590px) {
-    .section1 {
-      width: 100%;
-      margin: 0px;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .ul1 {
-      width: 70%;
-    }
-  }*/
+
 @media screen and (max-width: 865px) {
   .footer {
     gap: 40px;
@@ -52,10 +36,18 @@
     width: 80%;
   }
 }
-
+@media screen and (max-width: 510px) {
+  
+  .logo{
+    display: none;
+  }
+}
 @media screen and (max-width: 340px) {
   .section3 {
     padding: 5px;
     justify-content: center;
+  }
+  .header{
+    padding: 16px;
   }
 }
