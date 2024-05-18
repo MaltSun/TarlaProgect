@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleLocation.css" />
     
-    <link rel="stylesheet" href="..\NotAuthorized\mediaStyle.css" />
     <title>We located</title>
 </head>
 <body class="body">
-    <header id="top" class="header">
-      <a href="..\NotAuthorized\index.html"><img src="..\Images\Frame.png" alt="logo" /></a>
+    <header id="top" class="header theme-specialElement">
+      <a class="logo" href="..\NotAuthorized\index.html"><img src="..\Images\Frame.png" alt="logo" /></a>
       
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
@@ -36,16 +35,27 @@
             <li class="li"><a class="link" href="#location">Location</a></li>
             <li class="li"><a class="link" href="#legend">Legend</a></li>
           </ul>
-      
-          <button class="switcher">
-            <img src="..\Images\Day-Night.png" alt="Rectangle.png" />
-          </button>
-          <div class="logIn">
-            <img src="..\Images\Person.svg" alt="Rectangle.png" />
-            <p>Log in</p>
+          <div class="switchers">
+            <button data-i18="en" class="switcher changeButton theme-blueButton">
+              <img src="..\Images\UK.png" alt="light" />
+            </button>
+            <button data-i18="ru" class="switcher changeButton theme-blueButton">
+              <img src="..\Images\russia.png" alt="light" />
+            </button>
           </div>
+          <div class="switchers">
+            <button class="changeButton theme-blueButton" id="light-theme-btn">
+              <img src="..\Images\sun.png" alt="light" />
+            </button>
+            <button class="changeButton theme-blueButton" id="dark-theme-btn">
+              <img src="..\Images\night.png" alt="light" />
+            </button>
+          </div>
+          <button class="logIn">
+            <img src="..\Images\person.png" alt="light" />
+          </button>
     </header>
-    <section class="section">
+    <section class="section theme-element">
         
             <img class="img" src="..\Images\aboutUs1.png" alt="" />
             <div class="text">
@@ -59,24 +69,25 @@
             </div>      
           
     </section>
-    <section class=" map">
+    <section class=" map theme-specialElement">
       <div class="text">
-        <h1 id="location" class="textH1">Our location in USA</h1>
-        <div class="unvisibleImg"><script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=630&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
-        
+        <h1 id="location" class="textH1 ">Our location in USA</h1>
+          <div class="img visibleMap">
+        <script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=630&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>      
         <p class="textP">
           We like to keep things simple and authentic. We’ve sourced the very
           best from the very best, from our Poitou-Charentes butter to our
           Valrhona chocolate batons.
         </p>
       </div>
-      <div class="img">
-        <script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=630&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      <div class="unvisibleMap">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=320&amp;height=323&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
+      
       </section>
     </section>
-    <section class="section">                          
+    <section class="section theme-element">                          
           <img class="img" src="..\Images\aboutUs2.png" alt="" /> 
             <div class="text">
               <h1 id="legend" class="textH1">Legendary Bakes</h1>
@@ -89,7 +100,7 @@
             </div>
                   
     </section>
-    <footer class="footer">
+    <footer class="footer theme-element">
       <div class="icon">
         <img src="..\Images\phone.png" alt="Telephone">
         <a href="https://github.com/MaltSun/TarlaProgect"><img src="..\Images\github.png" alt="Github"/></a>
@@ -102,6 +113,8 @@
     <a class="link" href="..\NotAuthorized\WhoIsTarta.html">Privacy Policy</a>
   </div>
   <script src="..\Tarla\swaper.js"></script>
+  <script src="..\changeLanguage.js"></script>
+<script src="..\changeColor.js"></script>
     </footer> 
 </body>
 </html>
