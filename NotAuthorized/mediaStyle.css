@@ -22,6 +22,14 @@
     display: none;
   }
 }
+@media screen and (max-width: 1000px) {
+  .unvisibleImg {
+    display: flex;
+  }
+  .img {
+    display: none;
+  }
+}
 @media screen and (max-width: 930px) {
   .button4unvisible {
     display: block;
@@ -59,6 +67,7 @@
     justify-content: flex-end;
   }
 }
+
 @media screen and (max-width: 725px) {
   .img {
     display: none;
@@ -74,10 +83,72 @@
   .div1 {
     width: 90%;
   }
+  .button8{
+    width: 70%;
+  }
+  .header{
+    width: 89.5%;
+  }
+  .section1{
+    width: 89%;
+  }
+  .P1{
+    width: 80%;
+  }
+  .button1{
+    width: 70%;
+  }
+  .section2{
+    width: 93%;
+  }
+  .section6{
+    width: 97%;
+  }
 }
+
 @media screen and (max-width: 340px) {
   .section3 {
     padding: 5px;
     justify-content: center;
+  }
+  .section2{
+    width: 89%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .img{
+    display: none;    
+  }
+  .img6{
+    display: none;
+  }
+  .div6{
+    height: auto;
+  }
+  .button2{
+    width: 70%;
+  }
+  .section6{
+    width: 95%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .div6{
+    width: auto;
+  }
+  .p6_2{
+    width: 80%;
+  }
+  .p6_1{
+    width: 85%
+  }
+  .p2_2{
+    width: 90%;
+  }
+  .section1{
+    width: 84%;
+  }
+  .header{
+    width: 85%;
   }
 }
