@@ -5,9 +5,7 @@
 .link {
   text-decoration: none;
   list-style: none;
-  color: black;
   cursor: none;
-  color: #000;
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
@@ -58,11 +56,63 @@ background: #261d18;
   visibility: visible;
 }
 
-.logIn{
-  width: 45px;
-  height: 30px;
-  margin-bottom: 30px;
+.theme-element.dayMode {
+  background: #f5ede7 !important;
+  color: #000 !important;
 }
+
+.theme-element.nightMode {
+  background: #261d18 !important;
+  color: #725d49 !important;
+}
+
+.theme-specialElement.nightMode {
+  background: #16110e !important;
+  color: #725d49 !important;
+}
+
+.theme-specialElement.dayMode {
+  background: #ffc3a0 !important;
+  color: #000 !important;
+}
+
+.theme-button.dayMode {
+  border: 1px solid #000 !important;
+}
+
+.theme-button.nightMode {
+  border: 1px solid #725d49 !important;
+  color: #725d49; 
+}
+
+.theme-blueButton.dayMode {
+  border: 1px solid #0126de !important;
+  color: #0126de !important;
+}
+
+.theme-blueButton.nightMode {
+  border: 1px solid #5f74e2 !important;
+  color: #5f74e2 !important;
+  background:  #16110e !important;
+}
+.switchers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  gap: 5px;
+ }
+ .changeButton{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.002px; /* 154.553% */
+  border-radius: 15px;
+ }
 .hamburger-menu {
   visibility: hidden;
 }
@@ -150,7 +200,6 @@ background: #261d18;
 .section1 {
   width: 96.4%;
   height: auto;
-  background: #ffc3a0;
   display: flex;
   align-items: center;
   padding: 24px 26px;
@@ -172,7 +221,6 @@ background: #261d18;
   width: 444px;
   height: auto;
   margin-top: 10px;
-  color: #000;
   font-family: "Roboto";
   font-size: 18px;
   font-style: normal;
@@ -182,7 +230,6 @@ background: #261d18;
 
 .H1 {
   width: 85%;
-  color: #000;
   font-family: Roboto;
   font-size: 78px;
   font-style: normal;
@@ -194,7 +241,6 @@ background: #261d18;
 .button1 {
   width: 310px;
   height: 59px;
-  color: #000;
   text-align: center;
   font-family: Roboto;
   font-size: 22px;
@@ -202,14 +248,12 @@ background: #261d18;
   font-weight: 400;
   line-height: 34.002px; /* 154.553% */
   border-radius: 35px;
-  border: 1px solid #000;
   background: none;
   margin-left: 20px;
 }
 .section2 {
   width: 97.8%;
   height: auto;
-  background: #f5ede7;
   padding: 80px 16px;
   gap: 63px;
   display: flex;
@@ -219,7 +263,6 @@ background: #261d18;
 }
 .p2 {
   width: 250px;
-  color: #000;
   text-align: center;
   font-family: Roboto;
   font-size: 43px;
@@ -248,7 +291,6 @@ background: #261d18;
 }
 .H2 {
   width: 117px;
-  color: #000;
   text-align: center;
   font-family: Roboto;
   font-size: 27px;
@@ -259,7 +301,6 @@ background: #261d18;
 }
 .H2_2 {
   width: 200px;
-  color: #000;
   text-align: center;
   font-family: Roboto;
   font-size: 27px;
@@ -270,7 +311,6 @@ background: #261d18;
 }
 .p2_2 {
   width: 320px;
-  color: #000;
   text-align: center;
   font-family: "DM Sans";
   font-size: 18px;
@@ -281,7 +321,6 @@ background: #261d18;
 .button2 {
   width: 310px;
   height: 59px;
-  color: #0126de;
   text-align: center;
   font-family: Roboto;
   font-size: 22px;
@@ -289,98 +328,11 @@ background: #261d18;
   font-weight: 400;
   line-height: 34.002px; /* 154.553% */
   border-radius: 35px;
-  border: 1px solid #0126de;
   background: none;
 }
-  .hamburger-menu {
-    visibility: hidden;
-  }
-  
-  /* скрываем чекбокс */
-  #menu__toggle {
-    opacity: 0;
-  }
-  /* стилизуем кнопку */
-  .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center; /* центрируем содержимое кнопки */
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  /* добавляем "гамбургер" */
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #000000;
-  }
-  .menu__btn > span::before {
-    content: "";
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: "";
-    top: 8px;
-  }
-  /* контейнер меню */
-  .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    right: -100%;
-    /*left: -100%;*/
-    width: 250px;
-    height: 12%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #fcf2e9;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-  }
-  /* элементы меню */
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .menu__item:hover {
-    background-color: #cfd8dc;
-  }
-  
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-  }
- 
   .section3 {
     width: 100%;
     height: auto;
-    background: #f5ede7;
     padding: 49px 1px;
     gap: 48px;
     display: flex;
@@ -389,7 +341,7 @@ background: #261d18;
     justify-content: center;
   }
   .img3 {
-    display: vlex;
+    display: flex;
     width: 680px;
     height: auto;
     flex-shrink: 0;
@@ -412,7 +364,6 @@ background: #261d18;
     gap: 23px;
   }
   .p3 {
-    color: #000;
     font-family: Roboto;
     font-size: 40px;
     font-style: normal;
@@ -422,7 +373,6 @@ background: #261d18;
   .section4 {
     width: 100%;
     height: auto;
-    background: #f5ede7;
     padding: 90px 1px;
     gap: 24px;
     display: flex;
@@ -443,7 +393,6 @@ background: #261d18;
   }
   .p4_2 {
     width: 200px;
-    color: #000;
     margin-top: 10px;
     font-family: Roboto;
     font-size: 27px;
@@ -454,7 +403,6 @@ background: #261d18;
     margin-left: 0px;
   }
   .p4_3 {
-    color: #000;
     font-family: "DM Sans";
     font-size: 20px;
     font-style: normal;
@@ -467,8 +415,6 @@ background: #261d18;
     height: 58px;
     flex-shrink: 0;
     border-radius: 35px;
-    border: 1px solid #0126de;
-    color: #0126de;
     text-align: center;
     font-family: Roboto;
     font-size: 22px;
@@ -480,7 +426,6 @@ background: #261d18;
     display: none;
     width: 310px;
     height: 59px;
-    color: #000;
     text-align: center;
     font-family: Roboto;
     font-size: 22px;
@@ -488,12 +433,10 @@ background: #261d18;
     font-weight: 400;
     line-height: 34.002px; /* 154.553% */
     border-radius: 35px;
-    border: 1px solid #000;
     background: none;
     margin-top: 40px;
   }
   .H4 {
-    color: #000;
     text-align: center;
     font-family: Roboto;
     font-size: 39px;
@@ -520,9 +463,9 @@ background: #261d18;
   .div6 {
     width: auto;
     height: 577px;
-    padding: 25px;
-    border-radius: 20px;
-    border: 1px solid #000;
+    padding: 25px;    
+  border-radius: 20px;
+  border: 1px solid #000;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -536,7 +479,6 @@ background: #261d18;
   }
   .p6_1 {
     width: 360px;
-    color: #000;
     text-align: center;
     font-family: Roboto;
     font-size: 55px;
@@ -546,7 +488,6 @@ background: #261d18;
   }
   .p6_2 {
     max-width: 390px;
-    color: #000;
     text-align: center;
     font-family: "DM Sans";
     font-size: 20px;
@@ -556,7 +497,6 @@ background: #261d18;
   }
   .p6_3 {
     max-width: 400px;
-    color: #000;
     text-align: center;
     font-family: "DM Sans";
     font-size: 20px;
@@ -589,7 +529,6 @@ background: #261d18;
   .button7_2 {
     width: 95px;
     height: 58px;
-    color: #0126de;
     text-align: center;
     font-family: Roboto;
     font-size: 22px;
@@ -597,7 +536,6 @@ background: #261d18;
     font-weight: 400;
     line-height: 34.002px;
     border-radius: 35px;
-    border: 1px solid #0126de;
     background: none;
   }
   .B {
@@ -628,7 +566,6 @@ background: #261d18;
   }
   
   .H8 {
-    color: #000;
     text-align: center;
     font-family: Roboto;
     font-size: 50px;
@@ -638,7 +575,6 @@ background: #261d18;
     text-transform: uppercase;
   }
   .p8 {
-    color: #000;
     text-align: center;
     font-family: Roboto;
     font-size: 31px;
@@ -654,9 +590,6 @@ background: #261d18;
     justify-content: center;
     flex-shrink: 0;
     border-radius: 10px;
-    border: 1px solid #000;
-    background: rgba(255, 255, 255, 0.25);
-    color: #000;
     text-align: center;
     font-family: Roboto;
     font-size: 17px;
@@ -665,89 +598,7 @@ background: #261d18;
     line-height: 72px; /* 423.529% */
     text-transform: uppercase;
   }
-    
-  /* скрываем чекбокс */
-  #menu__toggle {
-    opacity: 0;
-  }
-  /* стилизуем кнопку */
-  .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center; /* центрируем содержимое кнопки */
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  /* добавляем "гамбургер" */
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #1e1814;
-  }
-  .menu__btn > span::before {
-    content: "";
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: "";
-    top: 8px;
-  }
-  /* контейнер меню */
-  .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    width: 230px;
-    height: 10%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #f5ede7;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-  }
-  /* элементы меню */
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .menu__item:hover {
-    background-color: #f5ede7;
-  }
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-  }
-  .day-hught_switcher {
-    border: none;
-    background: none;
-  }
+   
   .footer{
     width: 100%;
     height: auto;
@@ -776,4 +627,6 @@ background: #261d18;
         flex-wrap: wrap;
       
       }
+
+
        
