@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="swaper.css" />
     <link rel="stylesheet" href="sdarkLight.css" />
   </head>
-  <header class="header">
+  <header class="header theme-element">
     <div class="hamburger-menu">
       <input id="menu__toggle" type="checkbox" />
       <label class="menu__btn" for="menu__toggle">
@@ -52,17 +52,29 @@
         >
       </li>
     </ul>
-
-    <button data-i18="en" class="switcher">en</button>
-    <button data-i18="ru" class="switcher">ru</button>
-    <div class="logIn">
-      <img src="..\Images\Person.svg" alt="Rectangle.png" />
-      <p data-i18="LogIn">Log in</p>
+    <div class="switchers">
+      <button data-i18="en" class="switcher changeButton theme-blueButton">
+        <img src="..\Images\UK.png" alt="light" />
+      </button>
+      <button data-i18="ru" class="switcher changeButton theme-blueButton">
+        <img src="..\Images\russia.png" alt="light" />
+      </button>
     </div>
+    <div class="switchers">
+      <button class="changeButton theme-blueButton" id="light-theme-btn">
+        <img src="..\Images\sun.png" alt="light" />
+      </button>
+      <button class="changeButton theme-blueButton" id="dark-theme-btn">
+        <img src="..\Images\night.png" alt="light" />
+      </button>
+    </div>
+    <button class="logIn">
+      <img src="..\Images\person.png" alt="light" />
+    </button>
   </header>
 
   <body class="body">
-    <section class="section1 dayMode">
+    <section class="section1 theme-specialElement">
       <div class="div1">
         <p data-i18="FreshPastryKits" class="H1">Fresh pastry kits</p>
         <p data-i18="Smells" class="P1">
@@ -71,7 +83,7 @@
           every time. We’ve done the tricky bits so all you need to do is roll,
           proof and bake!
         </p>
-        <button data-i18="Catalog" class="button1">
+        <button data-i18="Catalog" class="button1 theme-button">
           <a href="..\Tarla\catalog.html">Catalog</a>
         </button>
       </div>
@@ -99,7 +111,7 @@
         <div class="swiper-button-next"></div>
       </div>
     </section>
-    <section id="howItWorks" class="section2">
+    <section id="howItWorks" class="section2 theme-element">
       <p data-i18="headerHowItWork" class="p2">How it works</p>
       <div class="div2">
         <div class="img2">
@@ -135,11 +147,11 @@
           </p>
         </div>
       </div>
-      <button data-i18="ReadMore" class="button2">
+      <button data-i18="ReadMore" class="button2 theme-button">
         <a href="..\Tarla\catalog.html">Read more</a>
       </button>
     </section>
-    <section class="section3">
+    <section class="section3 theme-element">
       <img class="img3" src="..\Images\img3.png" alt="" />
       <div class="div3">
         <p data-i18="FreshlyBaked" class="p3">
@@ -147,19 +159,19 @@
           pastries on your plates, and never needing to get out of your PJs.
         </p>
         <img class="img3UnVisible" src="..\Images\img3.png" alt="" />
-        <button data-i18="FreshPastryKits" class="button2">
+        <button data-i18="FreshPastryKits" class="button2 theme-blueButton">
           <a href="..\Tarla\catalog.html">Shop pastry kits</a>
         </button>
       </div>
     </section>
-    <section id="shop" class="section4">
+    <section id="shop" class="section4 theme-element">
       <p data-i18="FreshPastry" class="H4">Shop pastry kits</p>
       <div class="div4">
         <div>
           <img class="img4" src="..\Images\3-1.png" alt="" />
           <p data-i18="AllButter" class="p4_2">All-Butter Croissant</p>
           <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
-          <button data-i18="Information" class="button4">
+          <button data-i18="Information" class="button4 theme-blueButton">
             <a href="..\Tarla\catalog.html">Information</a>
           </button>
         </div>
@@ -167,7 +179,7 @@
           <img class="img4" src="..\Images\3-2.png" alt="" />
           <p data-i18="Almond" class="p4_2">Almond Croissant</p>
           <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
-          <button data-i18="Information" class="button4">
+          <button data-i18="Information" class="button4 theme-blueButton">
             <a href="..\Tarla\catalog.html">Information</a>
           </button>
         </div>
@@ -175,7 +187,7 @@
           <img class="img4" src="..\Images\3-3.png" alt="" />
           <p data-i18="Raspberry" class="p4_2">Raspberry Danish</p>
           <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
-          <button data-i18="Information" class="button4">
+          <button data-i18="Information" class="button4 theme-blueButton">
             <a href="..\Tarla\catalog.html">Information</a>
           </button>
         </div>
@@ -183,7 +195,7 @@
           <img class="img4" src="..\Images\3-4.png" alt="" />
           <p data-i18="PainAuxPaisins" class="p4_2">Pain Aux Raisins</p>
           <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
-          <button data-i18="Information" class="button4">
+          <button data-i18="Information" class="button4 theme-blueButton">
             <a href="..\Tarla\catalog.html">Information</a>
           </button>
         </div>
@@ -191,7 +203,7 @@
           <img class="img4" src="..\Images\3-5.png" alt="" />
           <p data-i18="Apricot" class="p4_2">Apricot Danish</p>
           <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
-          <button data-i18="Information" class="button4">
+          <button data-i18="Information" class="button4 theme-blueButton">
             <a href="..\Tarla\catalog.html">Information</a>
           </button>
         </div>
@@ -199,16 +211,16 @@
           <img class="img4" src="..\Images\3-6.png" alt="" />
           <p data-i18="PainAuChocolate" class="p4_2">Pain Au Chocolat</p>
           <p data-i18="KitOf6" class="p4_3">Kit of 6 - £13.50</p>
-          <button data-i18="Information" class="button4">
+          <button data-i18="Information" class="button4 theme-blueButton">
             <a href="..\Tarla\catalog.html">Information</a>
           </button>
         </div>
       </div>
     </section>
-    <section class="section5">
+    <section class="section5 theme-element">
       <img src="..\Images\section5.png" alt="" />
     </section>
-    <section id="whoIsTarla" class="section6">
+    <section id="whoIsTarla" class="section6 theme-element">
       <div class="div6">
         <img class="img6" src="..\Images\6-1.png" alt="" />
         <p data-i18="BetterThanbakery" class="p6_1">Better than the bakery</p>
@@ -239,16 +251,16 @@
     </section>
 
     <div class="line"></div>
-    <section class="section8">
+    <section class="section8 theme-element">
       <p data-i18="JoinOurCommunity" class="H8">Join our community</p>
       <p data-i18="GetBaked" class="p8">and let's get baked</p>
-      <button data-i18="SendUsMessage" class="button8">
+      <button data-i18="SendUsMessage" class="button8 theme-button">
         <a href="">Send us a message</a>
       </button>
     </section>
     <script src="changeColor.js"></script>
   </body>
-  <footer class="footer">
+  <footer class="footer theme-element">
     <div class="icon">
       <img src="..\Images\phone.png" alt="Telephone" />
       <a href="https://github.com/MaltSun/TarlaProgect"
@@ -258,11 +270,16 @@
     </div>
     <div class="divfooter">
       <a data-i18="FAQ" class="link" href="..\Tarla\aboutUs.html">FAQ</a>
-      <a data-i18="Location" class="link" href="..\Tarla\aboutUs.html">Location</a>
-      <a data-i18="Catalog" class="link" href="..\Tarla\catalog.html">Catalog</a>
+      <a data-i18="Location" class="link" href="..\Tarla\aboutUs.html"
+        >Location</a
+      >
+      <a data-i18="Catalog" class="link" href="..\Tarla\catalog.html"
+        >Catalog</a
+      >
       <a data-i18="Price" class="link" href="..\Tarla\catalog.html">Prices</a>
     </div>
     <script src="..\Tarla\swaper.js"></script>
     <script src="..\changeLanguage.js"></script>
+    <script src="..\changeColor.js"></script>
   </footer>
 </html>
