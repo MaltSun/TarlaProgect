@@ -25,63 +25,8 @@
   justify-content: center;
 }
 
-.theme-element.dayMode {
-  background: #f5ede7 !important;
-  color: #000 !important;
-}
 
-.theme-element.nightMode {
-  background: #261d18 !important;
-  color: #725d49 !important;
-}
-
-.theme-specialElement.nightMode {
-  background: #16110e !important;
-  color: #725d49 !important;
-}
-
-.theme-specialElement.dayMode {
-  background: #ffc3a0 !important;
-  color: #000 !important;
-}
-
-.theme-button.dayMode {
-  border: 1px solid #000 !important;
-}
-
-.theme-button.nightMode {
-  border: 1px solid #725d49 !important;
-  color: #725d49; 
-}
-
-.theme-blueButton.dayMode {
-  border: 1px solid #0126de !important;
-  color: #0126de !important;
-}
-
-.theme-blueButton.nightMode {
-  border: 1px solid #5f74e2 !important;
-  color: #5f74e2 !important;
-  background:  #16110e !important;
-}
- .switchers{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction:row;
-  gap: 5px;
- }
- .changeButton{
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 34.002px; /* 154.553% */
-  border-radius: 15px;
- }
+ 
 .header {
   width: 96.7%;
   height: 70px;
@@ -106,10 +51,7 @@
   visibility: visible;
 }
 
-.logIn{
-  width: 405px;
-  height: 40px;
-}
+
 .hamburger-menu {
   visibility: hidden;
 }
