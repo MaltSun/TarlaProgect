@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const specialElements = document.querySelectorAll(".theme-specialElement");
   const specialButtons = document.querySelectorAll(".theme-blueButton");
   const buttons = document.querySelectorAll(".theme-button");
+  const block = document.querySelectorAll(".theme-block");
 
   function applyTheme(theme) {
     if (theme === "dayMode") {
@@ -17,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
         element.classList.remove("nightMode");
       });
       specialButtons.forEach(function(element) {
+        element.classList.add("dayMode");
+        element.classList.remove("nightMode");
+      });
+      block.forEach(function(element) {
         element.classList.add("dayMode");
         element.classList.remove("nightMode");
       });
@@ -34,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function() {
         element.classList.remove("dayMode");
       });
       specialButtons.forEach(function(element) {
+        element.classList.add("nightMode");
+        element.classList.remove("dayMode");
+      });
+      block.forEach(function(element) {
         element.classList.add("nightMode");
         element.classList.remove("dayMode");
       });
