@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
     <link rel="stylesheet" href="..\Tarla\aboutUs.css" />
+    <link rel="stylesheet" href="..\changeColor.css" />
   </head>
-    <header class="header">
-    <div class="hamburger-menu">
+    <header class="header theme-specialElement">
+    <div class="hamburger-menu theme-element">
       <input id="menu__toggle" type="checkbox" />
       <label class="menu__btn" for="menu__toggle">
         <span></span>
@@ -18,24 +19,35 @@
         <li><a class="menu__item" href="#location">Location</a></li>
       </ul>
     </div>
-    <a href="..\Tarla\index.html"><img src="..\Images\Frame.png" alt="logo" /></a>
+    <a class="logo" href="..\Tarla\index.html"><img src="..\Images\Frame.png" alt="logo" /></a>
     
     <ul class="navigation">
       <li class="li"><a class="link" href="#legend">Legend</a></li>
       <li class="li"><a class="link" href="#privacyPolicy">Privacy Policy</a></li>
       <li class="li"><a class="link" href="#location">Location</a></li>
     </ul>
-
-    <button class="switcher">
-      <img src="..\Images\Day-Night.png" alt="Rectangle.png" />
-    </button>
-    <div class="logIn">
-      <img src="..\Images\Person.svg" alt="Rectangle.png" />
-      <p>Log in</p>
+    <div class="switchers">
+      <button data-i18="en" class="switcher changeButton theme-blueButton">
+        <img src="..\Images\UK.png" alt="light" />
+      </button>
+      <button data-i18="ru" class="switcher changeButton theme-blueButton">
+        <img src="..\Images\russia.png" alt="light" />
+      </button>
     </div>
+    <div class="switchers">
+      <button class="changeButton theme-blueButton" id="light-theme-btn">
+        <img src="..\Images\sun.png" alt="light" />
+      </button>
+      <button class="changeButton theme-blueButton" id="dark-theme-btn">
+        <img src="..\Images\night.png" alt="light" />
+      </button>
+    </div>
+    <button class="logIn">
+      <img src="..\Images\person.png" alt="light" />
+    </button>
   </header>
-  <body class="body">
-    <section class="section">
+  <body class="body theme-element">
+    <section class="section theme-element">
       <div class="paragraph2">
         <img class="img" src="..\Images\aboutUs1.png" alt="" />
         <div class="text">
@@ -48,7 +60,7 @@
         </div>
       </div>
    </section>
-   <section  class="aboutTarla">
+   <section  class="aboutTarla theme-element">
     <h3>A little bit about the bakery...</h1>
     <p class="textP textAboutTarla">I was looking for the same taste, so I decided to bake high-quality and healthy sourdough bread only from natural ingredients without the use of improvers, special dry mixes, using a minimum of ingredients: flour, water and salt. He named the bakery with his last name. I say by this that I bake as for myself.
     </p>
@@ -67,7 +79,7 @@
             citizens of Girona during an outbreak of the plague.
           </p>
         </div>
-        <img class="fone" src="..\Images\aboutUs2.png" alt="" />
+        <img class="img" src="..\Images\aboutUs2.png" alt="" />
       </div>
     </section>
     <section class="section1">
@@ -126,12 +138,15 @@
         </ul>
       </div>
     </section>
-    <section class=" map">
-      <div class="text">
+    <section class=" map theme-specialElement">
+      <div class="visibleMap">
+        <script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=570&amp;height=376&amp;lang=ru_RU&amp;scroll=true"></script>  
+      </div>
+         <div class="text">
         <h3 id="location">Our location in USA</h1>
-        <div class="unvisibleImg"><script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=630&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
-        
+        <div class="unvisibleImg">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=320&amp;height=323&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>        
         <p class="textP">
           We like to keep things simple and authentic. We’ve sourced the very
           best from the very best, from our Poitou-Charentes butter to our
@@ -140,7 +155,7 @@
       </div>
     </section>
   </body>
-  <footer class="footer">
+  <footer class="footer theme-element">
     <div class="icon">
       <img src="..\Images\phone.png" alt="Telephone">
       <a href="https://github.com/MaltSun/TarlaProgect"><img src="..\Images\github.png" alt="Github"/></a>
@@ -153,5 +168,7 @@
   <a class="link" href="..\Tarla\catalog.html">Prices</a>
 </div>
 <script src="..\Tarla\swaper.js"></script>
+<script src="..\changeLanguage.js"></script>
+<script src="..\changeColor.js"></script>
   </footer> 
 </html>

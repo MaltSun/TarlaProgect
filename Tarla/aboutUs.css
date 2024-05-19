@@ -11,6 +11,7 @@
   flex-wrap: wrap;
   background: #f5ede7;
 }
+
 .hamburger-menu {
   visibility: hidden;
 }
@@ -70,7 +71,6 @@
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: #333;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -98,9 +98,7 @@
 .link {
   text-decoration: none;
   list-style: none;
-  color: black;
   cursor: none;
-  color: #000;
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
@@ -120,10 +118,9 @@
   background: #f5ede7;
 }
 .header {
-  width: 96.7%;
+  width: 96%;
   height: 70px;
-   background: #f6ddcadc;
-
+  background: #f6ddcadc;
   display: flex;
   align-items: flex-end;
   padding: 16px 24px;
@@ -132,23 +129,23 @@
   gap: 16px;
   position: relative;
 }
+
 .map {
-  width: 90%;
+  width: 96%;
   height: auto;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
   gap: 70px;
-  padding: 55px;
+  padding: 20px;
   flex-wrap: wrap;
-   background: #f6ddcadc;
+  background: #f6ddcadc;
 }
 .unvisibleImg {
   display: none;
 }
 .textH1 {
-  color: #000;
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
@@ -185,7 +182,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  color: #000;
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
@@ -223,91 +219,6 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.hamburger-menu {
-  visibility: hidden;
-}
-
-/* скрываем чекбокс */
-#menu__toggle {
-  opacity: 0;
-}
-/* стилизуем кнопку */
-.menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center; /* центрируем содержимое кнопки */
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 1;
-}
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-}
-.menu__btn > span::before {
-  content: "";
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: "";
-  top: 8px;
-}
-/* контейнер меню */
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  right: -100%;
-  /*left: -100%;*/
-  width: 250px;
-  height: 15%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  text-align: center;
-  background-color: #fcf2e9;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-}
-/* элементы меню */
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.menu__item:hover {
-  background-color: #cfd8dc;
-}
-
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
-}
 .paragraph,
 .paragraph2 {
   width: 75%;
@@ -326,7 +237,6 @@
   justify-content: center;
 }
 .textP {
-  color: #000;
   font-family: "DM Sans";
   font-size: 13px;
   font-style: normal;
@@ -335,68 +245,86 @@
   text-transform: uppercase;
 }
 
-.aboutTarla{
-  width: 100%;
+.aboutTarla {
+  width: 90%;
   height: auto;
   background: #f6ddcadc;
-  margin: 40px 0px 20px 0px;
-gap: 20px;
-  padding: 20px ;
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   align-items:flex-start;
-   justify-content: flex-start;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-.textAboutTarla{
+.textAboutTarla {
   width: 75%;
   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   align-items:flex-start;
-   justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: justify;
 }
-.footer{
+.footer {
   width: 100%;
   height: auto;
-  padding:70px 0px 60px 0px;
+  padding: 70px 0px 60px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-    }
-    .icon{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 200px;
-      justify-content: center;
-      align-items:center;
-     gap: 10px;
-    }
-    .divfooter {
-      width: 60%;
-      height: auto;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-    
-    }
- @media screen and (max-width: 900px) {
-      .hamburger-menu {
-        visibility: visible;
-      }
-      .navigation {
-        display: none;
-      }
 }
- @media screen and (max-width: 1400px) {
-      .fone{
-        display: none;
-      }
+.icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
+.divfooter {
+  width: 60%;
+  gap: 20px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1400px) {
+  .fone {
+    display: none;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .visibleMap {
+    display: none;
+  }
+  .unvisibleImg {
+    display: flex;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hamburger-menu {
+    visibility: visible;
+  }
+  .navigation {
+    display: none;
+  }
+  .header {
+    width: 96%;
+    padding: 16px;
+  }
+  .map{
+    width: 95%;
+    padding: 16px;
+  }
+}
+
 @media screen and (max-width: 1160px) {
   .paragraph {
     flex-direction: column;
@@ -410,4 +338,36 @@ gap: 20px;
     object-fit: contain;
   }
 }
-
+@media screen and (max-width: 770px) {
+  .header{
+    width:94%;
+  }
+}
+@media screen and (max-width: 710px) {
+  .section1{
+    flex-direction: column;
+  }
+  .div1{
+    width:80%;
+  }
+}
+@media screen and (max-width: 526px) {
+ .logo{
+  display: none;
+ }
+ .header{
+  padding: 10px;
+ }
+ .map{
+  padding: 5px;
+ }
+}
+@media screen and (max-width: 350px) {
+  .map{
+    width: 100%;
+    padding: 0px;
+  }
+  .aboutTarla{
+    padding: 10px;
+  }
+}
