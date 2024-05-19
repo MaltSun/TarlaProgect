@@ -5,9 +5,7 @@
 .link {
   text-decoration: none;
   list-style: none;
-  color: black;
   cursor: none;
-  color: #000;
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
@@ -116,7 +114,6 @@
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: #333;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -182,7 +179,6 @@ flex-direction: column;
 }
 .baseText{
   width: 60%;
-  color: #000;
   text-align: justify;
   font-family: "DM Sans";
   font-size: 18px;
@@ -192,7 +188,6 @@ flex-direction: column;
 }
 .mainText{
   width: 320px;
-  color: #000;
   text-align: center;
   font-family: "DM Sans";
   font-size: 22px;
