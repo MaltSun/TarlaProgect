@@ -7,6 +7,7 @@ const i18Obj = {
     Smells:
       "Bringing the smells and tastes of your favourite patisserie to your home. Our kits have everything you need to easily make killer pastries every time. We’ve done the tricky bits so all you need to do is roll, proof and bake!",
     Catalog: "Catalog",
+    AmazingIngredients: "AmazingIngredients",
     ChoseYourFav: "Choose your fave",
     ChoseYourFaveDef:
       "This sounds easier than it's going to be. We've got all the classics  on here, so now it's over to you.",
@@ -80,29 +81,106 @@ const i18Obj = {
     ApricotComp:
       "flour, butter, sugar, salt, yeast, eggs, milk, apricot jam or compote, cream cheese or almond paste (optional), powdered sugar (for dusting, optional)",
     CourierDelivery1: "Courier delivery is available within the city.",
-    CourierDelivery2: "Delivery hours: from 12:00 PM to 9:00 PM, Monday to Saturday.",
+    CourierDelivery2:
+      "Delivery hours: from 12:00 PM to 9:00 PM, Monday to Saturday.",
     CourierDelivery3: "The delivery cost is 300 rubles.",
-    PickupPoint1:"You can pick up your order at any of our pickup points",
-    PickupPoint2:"Pickup points are located at: 5 Pushkin Street; 20 Sadovaya Street.",
-    PickupPoint3:"Pickup points hours: from 10:00 AM to 8:00 PM, seven days a week.",
-    SelfPickup1:"You can pick up your order at our store located at: 10 Lenin Street.",
-    SelfPickup2:"Self-pickup hours: from 9:00 AM to 6:00 PM, Monday to Saturday",
-    SelfPickup3:"Please call us in advance to confirm your order is ready.",
-    Legend:"Legend",
-    Tarla:"Tarla",
-    Delivery:"Delivery",
+    PickupPoint1: "You can pick up your order at any of our pickup points",
+    PickupPoint2:
+      "Pickup points are located at: 5 Pushkin Street; 20 Sadovaya Street.",
+    PickupPoint3:
+      "Pickup points hours: from 10:00 AM to 8:00 PM, seven days a week.",
+    SelfPickup1:
+      "You can pick up your order at our store located at: 10 Lenin Street.",
+    SelfPickup2:
+      "Self-pickup hours: from 9:00 AM to 6:00 PM, Monday to Saturday",
+    SelfPickup3: "Please call us in advance to confirm your order is ready.",
+    Legend: "Legend",
+    Tarla: "Tarla",
+    Delivery: "Delivery",
+    AboutTarlaDif1:
+      "I was looking for the same taste, so I decided to bake high-quality and healthy sourdough bread only from natural ingredients without the use of improvers, special dry mixes, using a minimum of ingredients: flour, water and salt. He named the bakery with his last name. I say by this that I bake as for myself.",
+    AboutTarlaDif2:
+      "Fresh sourdough bread, croissants and other pastries with delivery in Minsk, as well as at branded points of sale and in restaurants of our partners. Our bread is served in excellent establishments in Minsk. The trust in our products from such customers once again confirms the excellent quality of our work.",
+    AboutTarla: "A little bit about the bakery...",
+    LegendaryBakes: "Legendary Bakes",
+    LegendaryBakesDif:
+      "The inspiration for our brand and our guiding principles is the Legend of El Tarlà. A young man who brought joy to the isolated citizens of Girona during an outbreak of the plague.",
+    AmazingIngredientsDif:
+      "We like to keep things simple and authentic. We’ve sourced the very best from the very best, from our Poitou-Charentes butter to our Valrhona chocolate batons.",
+    TermsOfService1:
+      "Tarla Company collects personal information such as name, email address, and shipping address solely for the purpose of processing orders and providing customer support.",
+    TermsOfService2:
+      "Personal information provided to Tarla Company is used only for order fulfillment, customer communication, and improving our services.",
+    TermsOfService3:
+      "We implement industry-standard security measures to protect personal information from unauthorized access, alteration, disclosure, or destruction.",
+    TermsOfService4:
+      "Tarla Company may use cookies to enhance user experience and track website usage.",
+    Privacy1:
+      "By accessing or using any services provided by Tarla Company, users agree to be bound by these Terms of Service.",
+    Privacy2:
+      "While we strive to provide accurate product descriptions and images, Tarla Company does not warrant that product descriptions or other content on our website are accurate, complete, reliable, current, or error-free.",
+    Privacy3:
+      "Tarla Company will make every effort to ensure timely delivery of orders. However, we are not responsible for delays or issues caused by third-party shipping carriers.",
+    Privacy4:
+      " Please refer to our Returns and Refunds Policy for information on returning products and requesting refunds.",
+    Privacy5:
+      "Tarla Company will make every effort to ensure timely delivery of orders. However, we are not responsible for delays or issues caused by third-party shipping carriers.",
+    OurLocationInUSA: "Our location in USA",
+    OurLocationInUSADif:
+      "We like to keep things simple and authentic. We’ve sourced the very best from the very best, from our Poitou-Charentes butter to our Valrhona chocolate batons.",
+    HowToUse: "How to use",
   },
   ru: {
-    Legend:"Легенда",
-    Tarla:"Тарла",
-    SelfPickup1:"Вы можете забрать свой заказ в нашем магазине, расположенном по адресу: улица Ленина, 10.",
-    SelfPickup2:"Часы самовывоза: с 9:00 утра до 18:00 вечера, с понедельника по субботу",
-    SelfPickup3:"Пожалуйста, позвоните нам заранее, чтобы подтвердить готовность вашего заказа.",
-    PickupPoint1:"Вы можете забрать свой заказ в любом из наших пунктов выдачи.",
-    PickupPoint2:"Пункты самовывоза расположены по адресам: ул. Пушкина, 5; ул. Садовая, 20.",
-    PickupPoint3:"Часы работы пунктов выдачи: с 10:00 утра до 20:00 вечера, семь дней в неделю.",
+    HowToUse: "Как печь",
+    OurLocationInUSADif:
+      "Нам нравится, чтобы все было просто и аутентично. Мы выбираем самое лучшее из самого лучшего - от нашего масла Пуату-Шарантского до шоколадных батончиков Valrhona.",
+    OurLocationInUSA: "Мы в США",
+    Privacy1:
+      "Получая доступ к любым услугам, предоставляемым компанией Tarla, или используя их, пользователи соглашаются соблюдать настоящие Условия предоставления услуг.",
+    Privacy2:
+      "Несмотря на то, что мы стремимся предоставлять точные описания продуктов и изображения, компания Tarla не гарантирует, что описания продуктов или другой контент на нашем веб-сайте являются точными, полными, надежными, актуальными или не содержат ошибок.",
+    Privacy3:
+      "Компания Tarla приложит все усилия для обеспечения своевременной доставки заказов. Однако мы не несем ответственности за задержки или неполадки, вызванные действиями сторонних перевозчиков.",
+    Privacy4:
+      "Пожалуйста, ознакомьтесь с нашей политикой возврата товаров для получения информации о и запросе возмещения средств.",
+    Privacy5:
+      "Компания Tarla приложит все усилия для обеспечения своевременной доставки заказов. Однако мы не несем ответственности за задержки или неполадки, вызванные действиями сторонних перевозчиков.",
+    TermsOfService1:
+      "Компания Tarla собирает личную информацию, такую как имя, адрес электронной почты и адрес доставки, исключительно с целью обработки заказов и оказания поддержки клиентам.",
+    TermsOfService2:
+      "Личная информация, предоставленная компании Tarla, используется только для выполнения заказов, общения с клиентами и улучшения наших услуг.",
+    TermsOfService3:
+      "Мы применяем стандартные отраслевые меры безопасности для защиты личной информации от несанкционированного доступа, изменения, раскрытия или уничтожения.",
+    TermsOfService4:
+      "Компания Tarla может использовать файлы cookie для улучшения пользовательского опыта и отслеживания использования веб сайта.",
+    LegendaryBakesDif:
+      "Источником вдохновения для создания нашего бренда и наших руководящих принципов является легенда об Эль Тарле. Молодой человек, который принес радость изолированным жителям Жироны во время вспышки чумы.",
+    LegendaryBakes: "Легендарные пироги",
+    AboutTarlaDif1:
+      "Я искала такой же вкус, поэтому решила выпекать качественный и полезный хлеб на закваске только из натуральных ингредиентов, без использования улучшителей, специальных сухих смесей, используя минимум ингредиентов: муку, воду и соль. Он назвал пекарню своей фамилией. Этим я хочу сказать, что пеку как для себя.",
+    AboutTarlaDif2:
+      "Свежий хлеб на закваске, круассаны и другая выпечка с доставкой по Минску, а также в фирменных точках продаж и ресторанах наших партнеров. Наш хлеб подают в отличных заведениях Минска. Доверие к нашей продукции со стороны таких клиентов еще раз подтверждает отличное качество нашей работы.",
+    AboutTarla: "Немного о пекарне",
+    AmazingIngredientsDif:
+      "Нам нравится, чтобы все было просто и аутентично. Мы выбираем самое лучшее из самого лучшего - от нашего масла Пуату-Шарантского до шоколадных батончиков Valrhona.",
+    AmazingIngredients: "Лучшие ингредиенты",
+    Legend: "Легенда",
+    Tarla: "Тарла",
+    SelfPickup1:
+      "Вы можете забрать свой заказ в нашем магазине, расположенном по адресу: улица Ленина, 10.",
+    SelfPickup2:
+      "Часы самовывоза: с 9:00 утра до 18:00 вечера, с понедельника по субботу",
+    SelfPickup3:
+      "Пожалуйста, позвоните нам заранее, чтобы подтвердить готовность вашего заказа.",
+    PickupPoint1:
+      "Вы можете забрать свой заказ в любом из наших пунктов выдачи.",
+    PickupPoint2:
+      "Пункты самовывоза расположены по адресам: ул. Пушкина, 5; ул. Садовая, 20.",
+    PickupPoint3:
+      "Часы работы пунктов выдачи: с 10:00 утра до 20:00 вечера, семь дней в неделю.",
     CourierDelivery1: "Возможна курьерская доставка по городу.",
-    CourierDelivery2: "Часы доставки: с 12:00 до 21:00, с понедельника по субботу.",
+    CourierDelivery2:
+      "Часы доставки: с 12:00 до 21:00, с понедельника по субботу.",
     CourierDelivery3: "Стоимость доставки составляет 300 рублей.",
     SelfPickup: "Самовывоз",
     PickupPoint: "Пункт выдачи",
@@ -183,7 +261,7 @@ const i18Obj = {
     TermsOfService: "Условия обслуживания",
     Composition: "Состав",
     Prices: "Цена: 6 штук - £12",
-    Delivery:"Доставка",
+    Delivery: "Доставка",
   },
 };
 
