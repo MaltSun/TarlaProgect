@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="..\NotAuthorized\whoIsTarls.css" />
     <link rel="stylesheet" href="..\NotAuthorized\medialStyleWhoIsTarls.css" />
     <link rel="stylesheet" href="..\changeColor.css" />
+    <link rel="stylesheet" href="NotAuthorized\popup.css" />
     <title>Who is tarla?</title>
   </head>
   <body class="body theme-element">
-    <header id="top" class="header theme-element">
+    <header id="top" class="header theme-element lockPadding">
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
@@ -59,8 +60,8 @@
           <img src="..\Images\night.png" alt="light" />
         </button>
       </div>
-      <button class="logIn">
-        <img src="..\Images\person.png" alt="light" />
+      <button class="logIn popupAuthorization">
+        <a href="#popup"><img src="..\Images\person.png" alt="light" /></a>
       </button>
     </header>
     <h2 class="theme-element" data-i18="OurMessage" id="ourMessege">Our message</h1>
@@ -199,6 +200,19 @@
         </ul>
       </div>
     </section>
+    <div id="popup" class="popup">
+      <div class="popupBody">
+        <div class="popupContent">
+         <h3>Вход в аккаунт</h3> 
+         <a href="" class="popupClose closePopup">x</a>          
+          <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Логин" required>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+            <button class="authorizationButton" type="submit">Войти</button>
+        </div>
+      </div>
+    </div>
+    <script src="NotAuthorized\popup.js"></script>
   </body>
   <footer class="footer theme-element" >
     <div class="icon">

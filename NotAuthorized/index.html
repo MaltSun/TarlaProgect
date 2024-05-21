@@ -14,7 +14,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
-  <header class="header theme-element">
+  <header class="header theme-element lockPadding">
     <div class="hamburger-menu theme-element">
       <input id="menu__toggle" type="checkbox" />
       <label class="menu__btn" for="menu__toggle">
@@ -49,8 +49,8 @@
         <img src="..\Images\night.png" alt="light" />
       </button>
     </div>
-    <button class="logIn">
-      <img src="..\Images\person.png" alt="light" />
+    <button class="logIn popupAuthorization">
+      <a href="#popup"><img src="..\Images\person.png" alt="light" /></a>
     </button>
 
   </header>
@@ -169,8 +169,19 @@
       <p data-i18="GetBaked" class="p8">and let's get baked</p>
       <button data-i18="SendUsMessage" class="button8 theme-button"><a href="">Let's start</a></button>
     </section>
-  </body>
-  <footer class="footer theme-element">
+    <div id="popup" class="popup">
+      <div class="popupBody">
+        <div class="popupContent">
+         <h3>Вход в аккаунт</h3> 
+         <a href="" class="popupClose closePopup">x</a>          
+          <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Логин" required>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+            <button class="authorizationButton" type="submit">Войти</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer theme-element">
     <div class="icon">
       <img src="..\Images\phone.png" alt="Telephone">
       <a href="https://github.com/MaltSun/TarlaProgect"><img src="..\Images\github.png" alt="Github"/></a>
@@ -182,6 +193,9 @@
   <a data-i18="TermsOfService" class="link theme-element" href="..\NotAuthorized\WhoIsTarta.html">Terms of Service</a>
   <a data-i18="Privacy" class="link theme-element" href="..\NotAuthorized\WhoIsTarta.html">Privacy Policy</a>
 </div>
+    
+  </body>
+  <script src="NotAuthorized\popup.js"></script>
 <script src="..\Tarla\swaper.js"></script>
 <script src="..\changeLanguage.js"></script>
 <script src="..\changeColor.js"></script>

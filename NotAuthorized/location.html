@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleLocation.css" />
     <link rel="stylesheet" href="..\changeColor.css" />
+    <link rel="stylesheet" href="NotAuthorized\popup.css"/>
     <title>We located</title>
 </head>
 <body class="body">
-    <header id="top" class="header theme-specialElement">
+    <header id="top" class="header theme-specialElement lockPadding">
       <a class="logo" href="..\NotAuthorized\index.html"><img src="..\Images\Frame.png" alt="logo" /></a>
       
       <div class="hamburger-menu ">
@@ -48,8 +49,10 @@
               <img src="..\Images\night.png" alt="light" />
             </button>
           </div>
-          <button class="logIn">
-            <img src="..\Images\person.png" alt="light" />
+          <button class="logIn popupAuthorization">
+            <a class="popupAuthorization" href="#popup">
+              <img src="../Images/person.png" alt="light" />
+            </a>
           </button>
     </header>
     <section class="section theme-element">
@@ -109,9 +112,24 @@
     <a class="link theme-element" data-i18="TermsOfService" href="..\NotAuthorized\WhoIsTarta.html">Terms of Service</a>
     <a class="link theme-element" data-i18="Privacy" href="..\NotAuthorized\WhoIsTarta.html">Privacy Policy</a>
   </div>
+  <script src="..\changeColor.js"></script>
+    </footer> 
+    <div id="popup" class="popup">
+      <div class="popupBody">
+        <div class="popupContent">
+          <h3>Вход в аккаунт</h3>
+          <a href="" class="popupClose closePopup">x</a>
+          <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Логин" required>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+            <button class="authorizationButton" type="submit">Войти</button>
+          </form>
+        </div>
+      </div>
+    </div>
   <script src="..\Tarla\swaper.js"></script>
   <script src="..\changeLanguage.js"></script>
-<script src="..\changeColor.js"></script>
-    </footer> 
+  <script src="NotAuthorized/popup.js"></script>   
+
 </body>
 </html>
