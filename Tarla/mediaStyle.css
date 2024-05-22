@@ -3,7 +3,7 @@
     visibility: visible;
   }
   .navigation {
-    visibility: hidden;
+    display: none;
   }
 }
 @media screen and (max-width: 960px) {
@@ -33,6 +33,7 @@
   .visible {
     display: none;
   }
+
 }
 @media screen and (max-width: 1107px) {
   .section3 {
