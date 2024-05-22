@@ -1,0 +1,18 @@
+[
+    {
+        "fullName": "Иванов Иван Иванович",
+        "nickname": "ivan",
+        "phoneNumber": "+375291234567",
+        "email": "ivan@example.com",
+        "birthDate": "1990-05-15",
+        "password": "ivan1234"
+    },
+    {
+        "fullName": "Петрова Анна",
+        "nickname": "anna_petrova",
+        "phoneNumber": "+375296543210",
+        "email": "anna@example.com",
+        "birthDate": "1985-12-10",
+        "password": "password2"
+    }
+]
