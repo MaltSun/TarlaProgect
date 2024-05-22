@@ -6,6 +6,7 @@
     <title>Tarla</title>
     <link rel="stylesheet" href="..\NotAuthorized\style.css" />
     <link rel="stylesheet" href="mediaStyle.css" />
+    <link rel="stylesheet" href="popup.css" />
     <link rel="stylesheet" href="swaper.css" />
     <link rel="stylesheet" href="..\changeColor.css" />
     <link
@@ -52,9 +53,22 @@
     <button class="logIn popupAuthorization">
       <a href="#popup"><img src="..\Images\person.png" alt="light" /></a>
     </button>
-
   </header>
   <body class="body">
+    <div id="popup" class="popup">
+      <div class="popupBody">
+        <div class="popupContent">
+         <h3>Вход в аккаунт</h3> 
+         <a href="" class="popupClose closePopup">x</a>          
+          <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Логин" required>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+            <button class="authorizationButton" type="submit">Войти</button>
+          </form>
+          <script src="..\logIn.js"></script>
+        </div>
+      </div>
+    </div>
     <section class="section1 theme-block">
       <div class="div1">
         <p data-i18="FreshPastryKits" class="H1">Fresh pastry kits</p>
@@ -169,18 +183,7 @@
       <p data-i18="GetBaked" class="p8">and let's get baked</p>
       <button data-i18="SendUsMessage" class="button8 theme-button"><a href="">Let's start</a></button>
     </section>
-    <div id="popup" class="popup">
-      <div class="popupBody">
-        <div class="popupContent">
-         <h3>Вход в аккаунт</h3> 
-         <a href="" class="popupClose closePopup">x</a>          
-          <form id="loginForm">
-            <input type="text" id="username" name="username" placeholder="Логин" required>
-            <input type="password" id="password" name="password" placeholder="Пароль" required>
-            <button class="authorizationButton" type="submit">Войти</button>
-        </div>
-      </div>
-    </div>
+    
     <footer class="footer theme-element">
     <div class="icon">
       <img src="..\Images\phone.png" alt="Telephone">
@@ -195,7 +198,8 @@
 </div>
     
   </body>
-  <script src="NotAuthorized\popup.js"></script>
+ <script src="popup.js"></script>
+ 
 <script src="..\Tarla\swaper.js"></script>
 <script src="..\changeLanguage.js"></script>
 <script src="..\changeColor.js"></script>

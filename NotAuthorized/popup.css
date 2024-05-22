@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
 }
-.popup {
+/*.popup {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -12,6 +12,10 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.8s ease 0s;
+}*/
+.popupAuthorization{
+  width: 40px;
+  height: 40px;
 }
 .popup.open {
   opacity: 1;
