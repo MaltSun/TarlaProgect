@@ -50,25 +50,32 @@
         <img src="..\Images\night.png" alt="light" />
       </button>
     </div>
-    <button class="logIn popupAuthorization">
+    <div class="switchers">
+<button class="logIn popupAuthorization">
       <a href="#popup"><img src="..\Images\person.png" alt="light" /></a>
     </button>
+    <button class="logIn popupRegistration">
+      <a href="#popup2"><img src="..\Images\person.png" alt="light" /> Reg</a>
+    </button>
+    </div>  
+    
   </header>
   <body class="body">
     <div id="popup" class="popup">
       <div class="popupBody">
         <div class="popupContent">
-         <h3>Вход в аккаунт</h3> 
+         <h3 data-i18="LogIn">Log in</h3> 
          <a href="" class="popupClose closePopup">x</a>          
           <form id="loginForm">
-            <input type="text" id="username" name="username" placeholder="Логин" required>
-            <input type="password" id="password" name="password" placeholder="Пароль" required>
-            <button class="authorizationButton" type="submit">Войти</button>
+            <input data-i18="Username" type="text" id="username" name="username" placeholder="Username" required>
+            <input data-i18="Password" type="password" id="password" name="password" placeholder="Password" required>
+            <button data-i18="Enter" class="authorizationButton" type="submit">Enter</button>
           </form>
           <script src="..\logIn.js"></script>
         </div>
       </div>
     </div>
+ 
     <section class="section1 theme-block">
       <div class="div1">
         <p data-i18="FreshPastryKits" class="H1">Fresh pastry kits</p>
@@ -78,7 +85,7 @@
           every time. We’ve done the tricky bits so all you need to do is roll,
           proof and bake!
         </p>
-        <button data-i18="ReadMore" class="button1 theme-button">Read more</button>
+        <button data-i18="ReadMore" class="button1 theme-button popupAuthorization">Read more</button>
       </div>
       <div class="swiper mySwiper img1">
         <div class="swiper-wrapper">
@@ -141,7 +148,7 @@
           </p>
         </div>
       </div>
-      <button data-i18="ReadMore" class="button2 theme-button">Read more</button>
+      <button data-i18="ReadMore" class="button2 theme-button popupAuthorization">Read more</button>
     </section>
    
     <section class="section5 theme-element">
