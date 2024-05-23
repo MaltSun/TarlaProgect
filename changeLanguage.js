@@ -145,7 +145,7 @@ const i18Obj = {
     ProceedDif:" When you're ready to complete your order, proceed to our secure checkout. Here, you'll enter your delivery details and any special instructions. Rest assured, our checkout process is quick and hassle-free.",
     Confirmation:"Confirmation and Preparation",
     ConfirmationDif:"After placing your order, you'll receive a confirmation email detailing your purchase. Our skilled team will then spring into action, meticulously preparing your pastry kits with the utmost care.",
-  Registration:"Registration",
+  Registration:"Sign Up",
   Username:"Username",
 Password:"Password",
   },
