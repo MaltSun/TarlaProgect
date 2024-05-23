@@ -49,11 +49,14 @@
               <img src="..\Images\night.png" alt="light" />
             </button>
           </div>
-          <button class="logIn popupAuthorization">
-            <a class="popupAuthorization" href="#popup">
-              <img src="../Images/person.png" alt="light" />
-            </a>
-          </button>
+          <div class="switchers">
+            <button class="logIn popupAuthorization theme-blueButton">
+               <a href="#popup"> <img src="..\Images\LogIn.png" alt="Log In" /></a>
+            </button>
+            <button  class="logIn popupRegistration theme-blueButton">
+              <a href="#popup2"><img src="..\Images\SignUp.png" alt="Sign Up" /></a>
+            </button>
+            </div> 
     </header>
     <section class="section theme-element">
         
@@ -124,6 +127,15 @@
             <input type="password" id="password" name="password" placeholder="Пароль" required>
             <button class="authorizationButton" type="submit">Войти</button>
           </form>
+        </div>
+      </div>
+    </div>
+    <div id="popup2" class="popup">
+      <div class="popupBody">
+        <div class="popupContent">
+          <h3 data-i18="Registration">Sign Up</h3>
+          <a href="" class="popupClose closePopup">x</a>
+          <h1>meow</h1>
         </div>
       </div>
     </div>

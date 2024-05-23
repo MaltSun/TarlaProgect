@@ -51,13 +51,13 @@
       </button>
     </div>
     <div class="switchers">
-<button class="logIn popupAuthorization">
-      <a href="#popup"><img src="..\Images\person.png" alt="light" /></a>
+    <button class="logIn popupAuthorization theme-blueButton">
+       <a href="#popup"> <img src="..\Images\LogIn.png" alt="Log In" /></a>
     </button>
-    <button class="logIn popupRegistration">
-      <a href="#popup2"><img src="..\Images\person.png" alt="light" /> Reg</a>
+    <button  class="logIn popupRegistration theme-blueButton">
+      <a href="#popup2"><img src="..\Images\SignUp.png" alt="Sign Up" /></a>
     </button>
-    </div>  
+    </div> 
     
   </header>
   <body class="body">
@@ -70,12 +70,22 @@
             <input data-i18="Username" type="text" id="username" name="username" placeholder="Username" required>
             <input data-i18="Password" type="password" id="password" name="password" placeholder="Password" required>
             <button data-i18="Enter" class="authorizationButton" type="submit">Enter</button>
+            <button data-i18="Registration" class="authorizationButton popupRegistration" ><a href="#popup2">Registration</a>          
           </form>
           <script src="..\logIn.js"></script>
         </div>
       </div>
     </div>
- 
+    <div id="popup2" class="popup">
+      <div class="popupBody">
+        <div class="popupContent">
+          <h3 data-i18="Registration">Sign Up</h3>
+          <a href="" class="popupClose closePopup">x</a>
+          <h1>meow</h1>
+        </div>
+      </div>
+    </div>
+    
     <section class="section1 theme-block">
       <div class="div1">
         <p data-i18="FreshPastryKits" class="H1">Fresh pastry kits</p>
@@ -206,7 +216,7 @@
     
   </body>
  <script src="popup.js"></script>
- 
+ ..<script src="popup2.js"></script>
 <script src="..\Tarla\swaper.js"></script>
 <script src="..\changeLanguage.js"></script>
 <script src="..\changeColor.js"></script>

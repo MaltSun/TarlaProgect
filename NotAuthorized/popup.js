@@ -1,41 +1,34 @@
 const popupLinks = document.querySelectorAll(".popupAuthorization");
+const registrationLinks = document.querySelectorAll(".popupRegistration");
 const body = document.querySelector("body");
 const lockPadding = document.querySelectorAll(".lock-padding");
 
 let unlock = true;
-
 const timeout = 800;
 
-if (popupLinks.length > 0) {
-  for (let index = 0; index < popupLinks.length; index++) {
-    const popLink = popupLinks[index];
-    popLink.addEventListener("click", function (e) {
-      const curentPopup = document.getElementById("popup");
-      popupOpen(curentPopup);
-      e.preventDefault();
-    });
+function addPopupListeners(popupLinks, popupId) {
+  if (popupLinks.length > 0) {
+    for (let index = 0; index < popupLinks.length; index++) {
+      const popLink = popupLinks[index];
+      popLink.addEventListener("click", function (e) {
+        const curentPopup = document.getElementById(popupId);
+        popupOpen(curentPopup);
+        e.preventDefault();
+      });
+    }
   }
 }
 
-if (popupLinks.length > 0) {
-  for (let index = 0; index < popup2Links.length; index++) {
-    const popLink = popupLinks[index];
-    popLink.addEventListener("click", function (e) {
-      const curentPopup = document.getElementById("popup");
-      popupOpen(curentPopup);
-      e.preventDefault();
-    });
-  }
-}
-
-const popupCloseIcon = document.querySelectorAll(".closePopup");
-if (popupCloseIcon.length > 0) {
-  for (let index = 0; index < popupCloseIcon.length; index++) {
-    const el = popupCloseIcon[index];
-    el.addEventListener("click", function (e) {
-      popupClose(el.closest(".popup"));
-      e.preventляемDefault();
-    });
+function addCloseListeners(closeClass, popupClass) {
+  const popupCloseIcons = document.querySelectorAll(closeClass);
+  if (popupCloseIcons.length > 0) {
+    for (let index = 0; index < popupCloseIcons.length; index++) {
+      const el = popupCloseIcons[index];
+      el.addEventListener("click", function (e) {
+        popupClose(el.closest(popupClass));
+        e.preventDefault();
+      });
+    }
   }
 }
 
@@ -66,15 +59,11 @@ function popupClose(popupActive, doUnlock = true) {
 }
 
 function bodylock() {
-  /*const lockPaddingValue =
-    window.innerWidth - document.querySelector(".wrapper").offsetWidth + "px";*/
   if (lockPadding.length > 0) {
     for (let index = 0; index < lockPadding.length; index++) {
       const el = lockPadding[index];
-      //el.style.paddingRight = lockPaddingValue;
     }
   }
-  //body.style.paddingRight = lockPaddingValue;
   body.classList.add("lock");
 
   unlock = false;
@@ -102,8 +91,12 @@ function bodyUnlock() {
 }
 
 document.addEventListener("keydown", function (e) {
-  if (e.which === 27) {
+  if (e.key === "Escape") {
     const popupActive = document.querySelector(".popup.open");
     popupClose(popupActive);
   }
 });
+
+addPopupListeners(popupLinks, "popup");
+addPopupListeners(registrationLinks, "popup2");
+addCloseListeners(".closePopup", ".popup");
