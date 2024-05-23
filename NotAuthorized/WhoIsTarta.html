@@ -60,9 +60,14 @@
           <img src="..\Images\night.png" alt="light" />
         </button>
       </div>
-      <button class="logIn popupAuthorization">
-        <a href="#popup"><img src="..\Images\person.png" alt="light" /></a>
-      </button>
+      <div class="switchers">
+        <button class="logIn popupAuthorization theme-blueButton">
+           <a href="#popup"> <img src="..\Images\LogIn.png" alt="Log In" /></a>
+        </button>
+        <button  class="logIn popupRegistration theme-blueButton">
+          <a href="#popup2"><img src="..\Images\SignUp.png" alt="Sign Up" /></a>
+        </button>
+        </div> 
     </header>
     <h2 class="theme-element" data-i18="OurMessage" id="ourMessege">Our message</h1>
     <section class="section2 theme-element">
@@ -76,10 +81,12 @@
             everyone, regardless of their dietary needs.
           </p>
         </div>
-        <img class="img" src="..\Images\6-3.png" alt="" />
+        <img class="img dayPhoto" src="..\Images\6-3.png" alt="" />
+        <img class="img nightPhoto" src="..\Images\6-1.png" alt="" />
       </div>
       <div class="div2">
-        <img class="img" src="..\Images\6-2.png" alt="" />
+        <img class="img dayPhoto" src="..\Images\6-2.png" alt="" />
+        <img class="img nightPhoto" src="..\Images\6-3.png" alt="" />
         <div>
           <h3 data-i18="PreservingNature">Preserving Nature for Future Generations</h3>
           <p data-i18="PreservingNatureDif" class="p2">
@@ -101,11 +108,12 @@
             meets our high standards of taste, safety, and ethics.
           </p>
         </div>
-        <img class="img" src="..\Images\6-1.png" alt="" />
+        <img class="img dayPhoto" src="..\Images\6-1.png" alt="" />
+        <img class="img nightPhoto" src="..\Images\6-2.png" alt="" />
       </div>
     </section>
 
-    <h2 data-i18="Make" class="theme-element" id="makeOrder">How to make an order</h1>
+    <h2 data-i18="MakeOrder" class="theme-element" id="makeOrder">How to make an order</h1>
     <section class="section3 theme-element">
       <div class="div3">
         <img class="img6" src="..\NotAuthorized\Images\1.png" alt="" />
@@ -209,6 +217,15 @@
             <input type="text" id="username" name="username" placeholder="Логин" required>
             <input type="password" id="password" name="password" placeholder="Пароль" required>
             <button class="authorizationButton" type="submit">Войти</button>
+        </div>
+      </div>
+    </div>
+    <div id="popup2" class="popup">
+      <div class="popupBody">
+        <div class="popupContent">
+          <h3 data-i18="Registration">Sign Up</h3>
+          <a href="" class="popupClose closePopup">x</a>
+          <h1>meow</h1>
         </div>
       </div>
     </div>

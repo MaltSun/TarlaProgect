@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const specialButtons = document.querySelectorAll(".theme-blueButton");
   const buttons = document.querySelectorAll(".theme-button");
   const block = document.querySelectorAll(".theme-block");
+  const nightPhoto = document.querySelectorAll(".nightPhoto");
+  const dayPhoto = document.querySelectorAll(".dayPhoto");
 
   function applyTheme(theme) {
     if (theme === "dayMode") {
@@ -25,6 +27,14 @@ document.addEventListener("DOMContentLoaded", function() {
         element.classList.add("dayMode");
         element.classList.remove("nightMode");
       });
+      dayPhoto.forEach(function(element) {
+        element.classList.add("dayMode");
+        element.classList.remove("nightMode");
+      });
+      nightPhoto.forEach(function(element) {
+        element.classList.add("dayMode");
+        element.classList.remove("nightMode");
+      });
       buttons.forEach(function(element) {
         element.classList.add("dayMode");
         element.classList.remove("nightMode");
@@ -35,6 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
         element.classList.remove("dayMode");
       });
       specialElements.forEach(function(element) {
+        element.classList.add("nightMode");
+        element.classList.remove("dayMode");
+      });
+      dayPhoto.forEach(function(element) {
+        element.classList.add("nightMode");
+        element.classList.remove("dayMode");
+      });
+      nightPhoto.forEach(function(element) {
         element.classList.add("nightMode");
         element.classList.remove("dayMode");
       });
