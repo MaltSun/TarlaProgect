@@ -2,8 +2,8 @@
   .ul1 {
     width: 70%;
   }
-  .header{
-    width: 90%
+  .header {
+    width: 90%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -21,10 +21,15 @@
     gap: 40px;
   }
 }
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 800px) {
+  .logo {
+    display: none;
+  }
   .img {
     display: none;
   }
+}
+@media screen and (max-width: 725px) {
   .div1 {
     width: 90%;
   }
@@ -37,8 +42,7 @@
   }
 }
 @media screen and (max-width: 510px) {
-  
-  .logo{
+  .logo {
     display: none;
   }
 }
@@ -47,7 +51,23 @@
     padding: 5px;
     justify-content: center;
   }
-  .header{
-    padding: 16px;
+  .header {
+    width: 98%;
+    padding: 0px;
+    margin: 0;
+    gap: 10px;
+  }
+  .section1 {
+    width: 100%;
+    margin: 0;
+  }
+  .section2 {
+    width: 96%;
+    padding: 5px;
+    margin: 0;
+  }
+  .section3 {
+    width: 93%;
+    padding: 10px;
   }
 }
