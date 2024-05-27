@@ -69,9 +69,11 @@
           <form id="loginForm">
             <input data-i18="Username" type="text" id="username" name="username" placeholder="Username" required>
             <input data-i18="Password" type="password" id="password" name="password" placeholder="Password" required>
+           <div class="buttonDiv">
             <button data-i18="Enter" class="authorizationButton" type="submit">Enter</button>
             <button data-i18="Registration" class="authorizationButton popupRegistration" ><a href="#popup2">Registration</a>          
-          </form>
+           </div>
+         </form>
           <script src="..\logIn.js"></script>
         </div>
       </div>
@@ -81,9 +83,56 @@
         <div class="popupContent">
           <h3 data-i18="Registration">Sign Up</h3>
           <a href="" class="popupClose closePopup">x</a>
-          <h1>meow</h1>
+      <form id="registrationForm" class="registrationForm">
+          <div class="form-group">
+              <label for="phone">Номер телефона (РБ):</label>
+              <input type="text" id="phone" name="phone" placeholder="Номер телефона" required>
+              <span class="error" id="phoneError"></span>
+          </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <span class="error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+              <label for="dob">Дата рождения:</label>
+              <input type="date" id="dob" name="dob" required>
+              <span class="error" id="dobError"></span>
+          </div>
+          <div class="form-group">
+              <label for="password">Пароль:</label>
+              <input type="password" id="password" name="password" placeholder="Пароль" required>
+              <span class="error" id="passwordError"></span>
+          </div>
+          <div class="form-group">
+              <label for="confirmPassword">Повторите пароль:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторите пароль" required>
+              <span class="error" id="confirmPasswordError"></span>
+          </div>
+          <div class="form-group">
+              <label for="fullname">ФИО:</label>
+              <input type="text" id="fullname" name="fullname" placeholder="ФИО" required>
+              <span class="error" id="fullnameError"></span>
+          </div>
+          <div class="form-group">
+              <label for="nickname">Никнейм:</label>
+              <input type="text" id="nickname" name="nickname" placeholder="Никнейм" required readonly>
+              <button type="button" id="regenerateNickname">Сгенерировать никнейм</button>
+              <span class="error" id="nicknameError"></span>
+          </div>
+          <div class="form-group">
+              <input type="checkbox" id="agreement" name="agreement" required>
+              <label for="agreement">Я прочитал(а) и согласен(а) с <a href="#">Соглашением пользователя</a></label>
+              <span class="error" id="agreementError"></span>
+          </div>
+          <button type="submit" class="registration">
+           Зарегистрироваться
+           </button>
+          <span class="success" id="successMessage"></span>
+      </form>
         </div>
       </div>
+      <script src="..\signUp.js"></script>
     </div>
     
     <section class="section1 theme-block">
@@ -119,8 +168,7 @@
         <div class="arrows">
           <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-      </div>
-        
+      </div>        
     </section>
     <section id="howItWorks" class="section2 theme-element">
       <p data-i18="headerHowItWork"  class="p2">How it works</p>
@@ -203,9 +251,9 @@
     
     <footer class="footer theme-element">
     <div class="icon">
-      <img src="..\Images\phone.png" alt="Telephone">
+      <a href="tel:+375445676578"><img src="..\Images\phone.png" alt="Telephone"></a>      
       <a href="https://github.com/MaltSun/TarlaProgect"><img src="..\Images\github.png" alt="Github"/></a>
-      <img src="..\Images\e-mail.png" alt="E-mail">
+      <a href="polina.solodkova507@gmail.com"><img src="..\Images\e-mail.png" alt="E-mail"></a>
     </div>
 <div class="divfooter" > 
   <a data-i18="FAQ" class="link theme-element" href="..\NotAuthorized\WhoIsTarta.html">FAQ</a>
@@ -216,9 +264,9 @@
     
   </body>
  <script src="popup.js"></script>
- ..<script src="popup2.js"></script>
 <script src="..\Tarla\swaper.js"></script>
 <script src="..\changeLanguage.js"></script>
 <script src="..\changeColor.js"></script>
+<script src="..\call.js"></script>
   </footer>  
 </html>

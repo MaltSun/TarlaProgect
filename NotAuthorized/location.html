@@ -119,13 +119,17 @@
     <div id="popup" class="popup">
       <div class="popupBody">
         <div class="popupContent">
-          <h3>Вход в аккаунт</h3>
-          <a href="" class="popupClose closePopup">x</a>
+         <h3 data-i18="LogIn">Log in</h3> 
+         <a href="" class="popupClose closePopup">x</a>          
           <form id="loginForm">
-            <input type="text" id="username" name="username" placeholder="Логин" required>
-            <input type="password" id="password" name="password" placeholder="Пароль" required>
-            <button class="authorizationButton" type="submit">Войти</button>
-          </form>
+            <input data-i18="Username" type="text" id="username" name="username" placeholder="Username" required>
+            <input data-i18="Password" type="password" id="password" name="password" placeholder="Password" required>
+           <div class="buttonDiv">
+            <button data-i18="Enter" class="authorizationButton" type="submit">Enter</button>
+            <button data-i18="Registration" class="authorizationButton popupRegistration" ><a href="#popup2">Registration</a>          
+           </div>
+         </form>
+          <script src="..\logIn.js"></script>
         </div>
       </div>
     </div>
@@ -134,13 +138,57 @@
         <div class="popupContent">
           <h3 data-i18="Registration">Sign Up</h3>
           <a href="" class="popupClose closePopup">x</a>
-          <h1>meow</h1>
-        </div>
-      </div>
-    </div>
+      <form id="registrationForm" class="registrationForm">
+          <div class="form-group">
+              <label for="phone">Номер телефона (РБ):</label>
+              <input type="text" id="phone" name="phone" placeholder="Номер телефона" required>
+              <span class="error" id="phoneError"></span>
+          </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <span class="error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+              <label for="dob">Дата рождения:</label>
+              <input type="date" id="dob" name="dob" required>
+              <span class="error" id="dobError"></span>
+          </div>
+          <div class="form-group">
+              <label for="password">Пароль:</label>
+              <input type="password" id="password" name="password" placeholder="Пароль" required>
+              <span class="error" id="passwordError"></span>
+          </div>
+          <div class="form-group">
+              <label for="confirmPassword">Повторите пароль:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторите пароль" required>
+              <span class="error" id="confirmPasswordError"></span>
+          </div>
+          <div class="form-group">
+              <label for="fullname">ФИО:</label>
+              <input type="text" id="fullname" name="fullname" placeholder="ФИО" required>
+              <span class="error" id="fullnameError"></span>
+          </div>
+          <div class="form-group">
+              <label for="nickname">Никнейм:</label>
+              <input type="text" id="nickname" name="nickname" placeholder="Никнейм" required readonly>
+              <button type="button" id="regenerateNickname">Сгенерировать никнейм</button>
+              <span class="error" id="nicknameError"></span>
+          </div>
+          <div class="form-group">
+              <input type="checkbox" id="agreement" name="agreement" required>
+              <label for="agreement">Я прочитал(а) и согласен(а) с <a href="#">Соглашением пользователя</a></label>
+              <span class="error" id="agreementError"></span>
+          </div>
+          <button type="submit" class="registration">
+           Зарегистрироваться
+           </button>
+          <span class="success" id="successMessage"></span>
+      </form>
   <script src="..\Tarla\swaper.js"></script>
   <script src="..\changeLanguage.js"></script>
   <script src="popup.js"></script>   
-
+  <script src="popup2.js"></script>
+  <script src="..\signUp.js"></script>
 </body>
 </html>

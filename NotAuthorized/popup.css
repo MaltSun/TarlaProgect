@@ -29,6 +29,13 @@
   transform: perspective(160px) translate(0px, 0%) rotateX(0deg);
   opacity: 1;
 }
+.buttonDiv{
+  width: 70%;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .popupBody {
   min-height: 100%;
   display: flex;
@@ -37,11 +44,12 @@
   padding: 30px 10px;
 }
 .popupContent {
+  
   background: #f5ede7;
   color: #140c08;
   max-width: 600px;
   padding: 20px;
-  height: 170px;
+  height: auto;
   position: relative;
 
   display: flex;
@@ -51,6 +59,7 @@
   border-radius: 35px;
 }
 .form {
+  
   background-color: #6e7a5a;
   padding: 20px;
   box-shadow: 0 0 10px rgba(40, 36, 28, 0.952);
