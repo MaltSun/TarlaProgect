@@ -24,9 +24,11 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-
- 
+button a{
+  text-decoration: none;
+  text-align: none;
+  text-overflow: none;
+}
 .header {
   width: 96.7%;
   height: 70px;

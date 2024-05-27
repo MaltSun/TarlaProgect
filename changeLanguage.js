@@ -48,7 +48,7 @@ const i18Obj = {
       "You’ll soon be making pastries to rival the best bakeries in town. We use only the best ingredients for generous pastries that taste and smell amazing. So good, that you’ll take all the credit.",
     JoinOurCommunity: "Join our community",
     SendUsMessage: "Send us a message",
-    GetBaked: "and let's get baked",
+    GetBaked: "Get baked",
     LogIn: "Log in",
     Price: "Prices",
     FAQ: "FAQ",
