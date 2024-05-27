@@ -241,7 +241,11 @@
     display: none;
   }
   .text {
-    width: 80%;
+    width: 90%;
+    margin: 0px;    
+  }
+  .textMap{
+    margin-left:16px;
   }
   .map {
     padding: 20px 0px;
@@ -269,7 +273,7 @@
     display: none;
   }
   .header {
-    width: 90%;
-    padding: 16px;
+    width: 100%;
+    padding: 0px;
   }
 }
