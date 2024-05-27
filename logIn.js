@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
 
     const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const password = document.getElementById("loginPassword").value;
 
     fetch("../data.json")
       .then((response) => response.json())
