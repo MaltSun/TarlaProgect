@@ -18,6 +18,7 @@
 }
 .body {
   max-width: 1440px;
+  margin-top: 80px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -29,18 +30,7 @@ button a{
   text-align: none;
   text-overflow: none;
 }
-.header {
-  width: 96.7%;
-  height: 70px;
-  background: #f5ede7;
-  display: flex;
-  align-items: flex-end;
-  padding: 16px 24px;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 16px;
-  position: relative;
-}
+
 
 .navigation {
   width: auto;

@@ -1,10 +1,9 @@
-
 .img1 {
   width: 800px;
   height: 500px;
   flex-shrink: 0;
   border-radius: 20px;
- /*position: relative;*/
+  /*position: relative;*/
 }
 .swiper-slide {
   text-align: center;
@@ -18,7 +17,8 @@
   width: 100%;
   object-fit: cover;
 }
-.swiper-button-prev, .swiper-rtl .swiper-button-next{
-  left: 40px !important; 
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 40px !important;
   right: auto;
 }

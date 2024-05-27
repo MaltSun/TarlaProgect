@@ -5,6 +5,7 @@
 .body {
   max-width: 1440px;
   display: flex;
+  margin-top: 80px;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
@@ -117,18 +118,7 @@
   flex-wrap: wrap;
   background: #f5ede7;
 }
-.header {
-  width: 96%;
-  height: 70px;
-  background: #f6ddcadc;
-  display: flex;
-  align-items: flex-end;
-  padding: 16px 24px;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 16px;
-  position: relative;
-}
+
 
 .map {
   width: 96%;
