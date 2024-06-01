@@ -17,7 +17,7 @@
 .li {
   list-style-type: none;
 }
-.body {
+.base {
   max-width: 1440px;
   display: flex;
   margin-top: 80px;
