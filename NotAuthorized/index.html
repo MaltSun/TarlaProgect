@@ -1,80 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarla</title>
-    <link rel="icon" href="..\Images\croissant.png" type="image/png">
-    <link rel="stylesheet" href="..\NotAuthorized\style.css" />
-    <link rel="stylesheet" href="mediaStyle.css" />
-    <link rel="stylesheet" href="popup.css" />
-    <link rel="stylesheet" href="swaper.css" />
-    <link rel="stylesheet" href="..\changeColor.css" />
-    <link rel="stylesheet" href="..\effects.css" />
+    <link rel="icon" href="../Images/croissant.png" type="image/png">
+    <link rel="stylesheet" href="../NotAuthorized/style.css">
+    <link rel="stylesheet" href="mediaStyle.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="swaper.css">
+    <link rel="stylesheet" href="../changeColor.css">
+    <link rel="stylesheet" href="../effects.css">
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
-  <header class="header theme-element lockPadding">
-    <div class="hamburger-menu theme-element">
-      <input id="menu__toggle" type="checkbox" />
-      <label class="menu__btn" for="menu__toggle">
-        <span></span>
-      </label>
-      <ul class="menu__box theme-element">
-        <li><a data-i18="headerShop" class="menu__item theme-element" href="#shop">Shop</a></li>
-        <li><a data-i18="headerHowItWork" class="menu__item theme-element" href="#howItWorks">How it works?</a></li>
-        <li><a data-i18="headerWhoIsTarla" class="menu__item theme-element" href="#whoIsTarla">Who is Tarla?</a></li>
+  <body class="base">
+    <header class="header theme-element lockPadding">
+      <div class="hamburger-menu theme-element">
+        <input id="menu__toggle" type="checkbox"/>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box theme-element">
+          <li>
+            <a
+              data-i18="headerShop"
+              class="menu__item theme-element"
+              href="#shop"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              data-i18="headerHowItWork"
+              class="menu__item theme-element"
+              href="#howItWorks"
+              >How it works?</a
+            >
+          </li>
+          <li>
+            <a
+              data-i18="headerWhoIsTarla"
+              class="menu__item theme-element"
+              href="#whoIsTarla"
+              >Who is Tarla?</a
+            >
+          </li>
+        </ul>
+      </div>
+      <img class="img" src="../Images/Frame.png" alt="logo">
+      <ul class="navigation">
+        <li class="li">
+          <a data-i18="headerShop" class="link theme-element" href="#shop">
+            Shop</a
+          >
+        </li>
+        <li class="li">
+          <a
+            data-i18="headerHowItWork"
+            class="link theme-element"
+            href="#howItWorks"
+            >How it works?</a
+          >
+        </li>
+        <li class="li">
+          <a
+            data-i18="headerWhoIsTarla"
+            class="link theme-element"
+            href="#whoIsTarla"
+            >Who is Tarla?</a
+          >
+        </li>
       </ul>
-    </div>
-    <img class="img" src="..\Images\Frame.png" alt="logo" />
-    <ul class="navigation">
-      <li class="li"><a data-i18="headerShop" class="link theme-element" href="#shop"> Shop</a></li>
-      <li class="li"><a data-i18="headerHowItWork" class="link theme-element" href="#howItWorks">How it works?</a></li>
-      <li class="li"><a data-i18="headerWhoIsTarla" class="link theme-element" href="#whoIsTarla">Who is Tarla?</a></li>
-    </ul>
 
-    <div class="switchers">
-      <button data-i18="en" class="switcher changeButton theme-blueButton">
-        <img src="..\Images\UK.png" alt="light" />
-      </button>
-      <button data-i18="ru" class="switcher changeButton theme-blueButton">
-        <img src="..\Images\russia.png" alt="light" />
-      </button>
-    </div>
-    <div class="switchers">
-      <button class="changeButton theme-blueButton" id="light-theme-btn">
-        <img src="..\Images\sun.png" alt="light" />
-      </button>
-      <button class="changeButton theme-blueButton" id="dark-theme-btn">
-        <img src="..\Images\night.png" alt="light" />
-      </button>
-    </div>
-    <div class="switchers">
-    <button class="logIn popupAuthorization theme-blueButton">
-       <a href="#popup"> <img src="..\Images\authorization.png" alt="Log In" /></a>
-    </button>
-    <button  class="logIn popupRegistration theme-blueButton">
-      <a href="#popup2"><img src="..\Images\registration.png" alt="Sign Up" /></a>
-    </button>
-    </div>     
-  </header>
-  <body class="body">
+      <div class="switchers">
+        <button data-i18="en" class="switcher changeButton theme-blueButton">
+          <img src="../Images/UK.png" alt="light">
+        </button>
+        <button data-i18="ru" class="switcher changeButton theme-blueButton">
+          <img src="../Images/russia.png" alt="light">
+        </button>
+      </div>
+      <div class="switchers">
+        <button class="changeButton theme-blueButton" id="light-theme-btn">
+          <img src="../Images/sun.png" alt="light">
+        </button>
+        <button class="changeButton theme-blueButton" id="dark-theme-btn">
+          <img src="../Images/night.png" alt="light">
+        </button>
+      </div>
+      <div class="switchers">
+        <a class="logIn popupAuthorization theme-blueButton" href="#popup">
+          <img src="../Images/authorization.png" alt="Log In"></a>
+        <a class="logIn popupRegistration theme-blueButton" href="#popup2"
+          ><img src="../Images/registration.png" alt="Sign Up"></a>
+      </div>
+    </header>
     <div id="popup" class="popup">
       <div class="popupBody">
         <div class="popupContent">
-         <h3 data-i18="LogIn">Log in</h3> 
-         <a href="" class="popupClose closePopup">x</a>          
-          <form id="loginForm" >
-            <input data-i18="Username" type="text" id="username" name="username" placeholder="Username" required>
-            <input data-i18="Password" type="password" id="loginPassword" name="password" placeholder="Password" required>
-           <div class="buttonDiv">
-            <button data-i18="Enter" class="authorizationButton" type="submit">Enter</button>
+          <h3 data-i18="LogIn">Log in</h3>
+          <a href="" class="popupClose closePopup">x</a>
+          <form id="loginForm">
+            <input
+              data-i18="Username"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <input
+              data-i18="Password"
+              type="password"
+              id="loginPassword"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <div class="buttonDiv">
+              <button
+                data-i18="Enter"
+                class="authorizationButton"
+                type="submit"
+              >
+                Enter
+              </button>
             </div>
-         </form>
-          <script src="..\logIn.js"></script>
+          </form>
+          <script src="../logIn.js"></script>
         </div>
       </div>
     </div>
@@ -83,98 +139,150 @@
         <div class="popupContent">
           <h3 data-i18="Registration">Sign Up</h3>
           <a href="" class="popupClose closePopup">x</a>
-      <form id="registrationForm" class="registrationForm">
-          <div class="form-group">
+          <form id="registrationForm" class="registrationForm">
+            <div class="form-group">
               <label for="phone">Номер телефона (РБ):</label>
-              <input type="text" id="phone" name="phone" placeholder="Номер телефона" required>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Номер телефона"
+                required
+              />
               <span class="error" id="phoneError"></span>
-          </div>
-          <div class="form-group">
+            </div>
+            <div class="form-group">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Email" required>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
               <span class="error" id="emailError"></span>
-          </div>
-          <div class="form-group">
+            </div>
+            <div class="form-group">
               <label for="dob">Дата рождения:</label>
-              <input type="date" id="dob" name="dob" required>
+              <input type="date" id="dob" name="dob" required />
               <span class="error" id="dobError"></span>
-          </div>
-          <div class="form-group">
+            </div>
+            <div class="form-group">
               <label for="password">Пароль:</label>
-              <input type="password" id="password" name="password" placeholder="Пароль" required>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Пароль"
+                required
+              />
               <span class="error" id="passwordError"></span>
-          </div>
-          <div class="form-group">
+            </div>
+            <div class="form-group">
               <label for="confirmPassword">Повторите пароль:</label>
-              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторите пароль" required>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Повторите пароль"
+                required
+              />
               <span class="error" id="confirmPasswordError"></span>
-          </div>
-          <div class="form-group">
+            </div>
+            <div class="form-group">
               <label for="fullname">ФИО:</label>
-              <input type="text" id="fullname" name="fullname" placeholder="ФИО" required>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="ФИО"
+                required
+              />
               <span class="error" id="fullnameError"></span>
-          </div>
-          <div class="form-group">
+            </div>
+            <div class="form-group">
               <label for="nickname">Никнейм:</label>
-              <input type="text" id="nickname" name="nickname" placeholder="Никнейм" required readonly>
-              <button type="button" id="regenerateNickname" class="registrationButton">Сгенерировать никнейм</button>
+              <input
+                type="text"
+                id="nickname"
+                name="nickname"
+                placeholder="Никнейм"
+                required
+                readonly
+              />
+              <button
+                type="button"
+                id="regenerateNickname"
+                class="registrationButton"
+              >
+                Сгенерировать никнейм
+              </button>
               <span class="error" id="nicknameError"></span>
-          </div>
-          <div class="form-group">
-              <input type="checkbox" id="agreement" name="agreement" required>
-              <label for="agreement">Я прочитал(а) и согласен(а) с <a href="#">Соглашением пользователя</a></label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="agreement" name="agreement" required />
+              <label for="agreement"
+                >Я прочитал(а) и согласен(а) с
+                <a href="#">Соглашением пользователя</a></label
+              >
               <span class="error" id="agreementError"></span>
-          </div>
-          <button type="submit" class="registration registrationButton">
-           Зарегистрироваться
-           </button>
-          <span class="success" id="successMessage"></span>
-      </form>
+            </div>
+            <button type="submit" class="registration registrationButton">
+              Зарегистрироваться
+            </button>
+            <span class="success" id="successMessage"></span>
+          </form>
         </div>
       </div>
-      <script src="..\signUp.js"></script>
+      <script src="../signUp.js"></script>
     </div>
-    
-    <section id="shop"class="section1 theme-block">
-      <div class="div1">
-        <p data-i18="FreshPastryKits" class="H1">Fresh pastry kits</p>
-        <p  data-i18="Smells" class="P1">
+
+    <section class="section1 theme-block">
+      <div id="shop" class="div1">
+        <h1 data-i18="FreshPastryKits" class="H1">Fresh pastry kits</h1>
+        <p data-i18="Smells" class="P1">
           Bringing the smells and tastes of your favourite patisserie to your
           home. Our kits have everything you need to easily make killer pastries
           every time. We’ve done the tricky bits so all you need to do is roll,
           proof and bake!
         </p>
-        <button data-i18="ReadMore" class="button1 theme-button popupAuthorization">Read more</button>
+        <button
+          data-i18="ReadMore"
+          class="button1 theme-button popupAuthorization"
+        >
+          Read more
+        </button>
       </div>
       <div class="swiper mySwiper img1">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="..\ImagesSwapper\swapper1.png" />
+            <img src="../ImagesSwapper/swapper1.png" alt="swapper">
           </div>
           <div class="swiper-slide">
-            <img src="..\ImagesSwapper\swapper2.png" />
+            <img src="../ImagesSwapper/swapper2.png" alt="swapper">
           </div>
           <div class="swiper-slide">
-            <img src="..\ImagesSwapper\swapper3.jpg" />
+            <img src="../ImagesSwapper/swapper3.jpg" alt="swapper">
           </div>
           <div class="swiper-slide">
-            <img src="..\ImagesSwapper\swapper4.jpg " />
+            <img src="../ImagesSwapper/swapper4.jpg " alt="swapper">
           </div>
           <div class="swiper-slide">
-            <img src="..\ImagesSwapper\swapper5.jpg" />
+            <img src="../ImagesSwapper/swapper5.jpg" alt="swapper">
           </div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="arrows">
           <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>        
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
     </section>
     <section id="howItWorks" class="section2 theme-element">
-      <p data-i18="headerHowItWork"  class="p2">How it works</p>
+      <p data-i18="headerHowItWork" class="p2">How it works</p>
       <div class="div2">
         <div class="img2">
-          <img src="..\Images\1.png" alt="" />
+          <img src="../Images/1.png" alt="">
           <p data-i18="ChoseYourFav" class="H2_2">Choose your fave</p>
           <p data-i18="ChoseYourFaveDef" class="p2_2">
             This sounds easier than it's going to be. We've got all the classics
@@ -182,7 +290,7 @@
           </p>
         </div>
         <div class="img2">
-          <img src="..\Images\2.png" alt="" />
+          <img src="../Images/2.png" alt="">
           <p data-i18="DingDong" class="H2">Ding dong</p>
           <p data-i18="DingDongDif" class="p2_2">
             Next you'll get a beautiful little package delivered to your door,
@@ -190,7 +298,7 @@
           </p>
         </div>
         <div class="img2">
-          <img src="..\Images\3.png" alt="" />
+          <img src="../Images/3.png" alt="">
           <p data-i18="GetBaked" class="H2">Get baked</p>
           <p data-i18="GetBakedDif" class="p2_2">
             Take your fresh pastry sheet and fillings, learn our pro techniques
@@ -198,7 +306,7 @@
           </p>
         </div>
         <div class="img2">
-          <img src="..\Images\4.png" alt="" />
+          <img src="../Images/4.png" alt="">
           <p data-i18="takeTheCredit" class="H2_2">Take the credit</p>
           <p data-i18="takeTheCreditDif" class="p2_2">
             It was all you, nudge-nudge wink-wink. We're just happy to be your
@@ -206,15 +314,19 @@
           </p>
         </div>
       </div>
-      <button data-i18="ReadMore" class="button2 theme-button popupAuthorization">Read more</button>
+      <button
+        data-i18="ReadMore"
+        class="button2 theme-button popupAuthorization"
+      >
+        Read more
+      </button>
     </section>
-   
-    <section class="section5 theme-element">
-      <img src="..\Images\section5.png" alt="" />
-    </section>
-    <section id="whoIsTarla" class="section6 theme-element">
-      <div class="div6">
-        <img class="img6" src="..\Images\6-1.png" alt="" />
+    <div class="section5 theme-element">
+      <img src="../Images/section5.png" alt="section5">
+    </div>
+    <section class="section6 theme-element">
+      <div id="whoIsTarla" class="div6">
+        <img class="img6" src="../Images/6-1.png" alt="section6">
         <p data-i18="BetterThanbakery" class="p6_1">Better than the bakery</p>
         <p data-i18="BetterThanbakeryDif" class="p6_2">
           You’ll soon be making pastries to rival the best bakeries in town. We
@@ -223,7 +335,7 @@
         </p>
       </div>
       <div class="div6">
-        <img class="img6" src="..\Images\6-2.png" alt="" />
+        <img class="img6" src="../Images/6-2.png" alt="section6">
         <p data-i18="PlanetFriendly" class="p6_1">Planet-friendly packaging</p>
         <p data-i18="PlanetFriendlyDif" class="p6_2">
           We’ve done everything we can to make sure our packaging has the
@@ -232,7 +344,7 @@
         </p>
       </div>
       <div class="div6">
-        <img class="img6" src="..\Images\6-3.png" alt="" />
+        <img class="img6" src="../Images/6-3.png" alt="section6">
         <p data-i18="SimpleBake" class="p6_1">Simple to bake at home</p>
         <p data-i18="SimpleBakeDif" class="p6_3">
           We’ve done the hard work, so you don’t have to. Every pastry is easy
@@ -241,36 +353,58 @@
         </p>
       </div>
     </section>
-       
     <div class="line"></div>
     <section class="section8 theme-element">
       <p data-i18="JoinOurCommunity" class="H8">Join our community</p>
       <p data-i18="GetBaked" class="p8">and let's get baked</p>
-      <button  class="button8 theme-button "><a data-i18="SendUsMessage" href="mailto:polina.solodkova507@gmail.com">Let's start</a></button>
+      <a
+        class="button8 heme-blueButton"
+        data-i18="SendUsMessage"
+        href="mailto:polina.solodkova507@gmail.com"
+        >Let's start</a
+      >
     </section>
-    
     <footer class="footer theme-element">
       <div class="icon">
         <a href="tel:+375295950858">
-        <img src="..\Images\phone.png" alt="Telephone" />
+          <img src="../Images/phone.png" alt="Telephone">
         </a>
         <a href="https://github.com/MaltSun/TarlaProgect"
-          ><img src="..\Images\github.png" alt="Github"/></a>
+          ><img src="../Images/github.png" alt="Github"></a>
         <a href="mailto:polina.solodkova507@gmail.com">
-         <img src="..\Images\e-mail.png" alt="E-mail" />
-      </a>      
+          <img src="../Images/e-mail.png" alt="E-mail">
+        </a>
       </div>
-<div class="divfooter" > 
-  <a data-i18="FAQ" class="link theme-element" href="..\NotAuthorized\WhoIsTarta.html">FAQ</a>
-  <a  data-i18="Location" class="link theme-element" href="..\NotAuthorized\location.html">Location</a>
-  <a data-i18="TermsOfService" class="link theme-element" href="..\NotAuthorized\WhoIsTarta.html">Terms of Service</a>
-  <a data-i18="Privacy" class="link theme-element" href="..\NotAuthorized\WhoIsTarta.html">Privacy Policy</a>
-</div>
-    
+      <div class="divfooter">
+        <a
+          data-i18="FAQ"
+          class="link theme-element"
+          href="../NotAuthorized/WhoIsTarta.html"
+          >FAQ</a
+        >
+        <a
+          data-i18="Location"
+          class="link theme-element"
+          href="../NotAuthorized/location.html"
+          >Location</a
+        >
+        <a
+          data-i18="TermsOfService"
+          class="link theme-element"
+          href="../NotAuthorized/WhoIsTarta.html"
+          >Terms of Service</a
+        >
+        <a
+          data-i18="Privacy"
+          class="link theme-element"
+          href="../NotAuthorized/WhoIsTarta.html"
+          >Privacy Policy</a
+        >
+      </div>
+      <script src="popup.js"></script>
+      <script src="../Tarla/swaper.js"></script>
+      <script src="../changeLanguage.js"></script>
+      <script src="../changeColor.js"></script>
+    </footer>
   </body>
- <script src="popup.js"></script>
-<script src="..\Tarla\swaper.js"></script>
-<script src="..\changeLanguage.js"></script>
-<script src="..\changeColor.js"></script>
-  </footer>  
 </html>
