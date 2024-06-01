@@ -43,12 +43,11 @@
   justify-content: center;
   padding: 30px 10px;
 }
-.popupContent {
-  
+.popupContent {  
   background: #f5ede7;
   color: #140c08;
-  max-width: 600px;
-  padding: 20px;
+ max-width: 500px;
+  padding: 15px;
   height: auto;
   position: relative;
 
@@ -58,15 +57,9 @@
   align-items: center;
   border-radius: 35px;
 }
-.form {
-  
-  background-color: #6e7a5a;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(40, 36, 28, 0.952);
-}
 input[type="text"],
 input[type="password"] {
-  width: 100%;
+  width: 90%;
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -84,7 +77,7 @@ input[type="password"] {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 34.002px; /* 154.553% */
+  line-height: 34.002px; 
   border-radius: 35px;
 }
 .popupClose{
@@ -97,4 +90,18 @@ input[type="password"] {
 }
 body.lock {
   overflow: hidden;
+}
+.registrationButton{
+  border: 1px solid #0126de !important;
+  color: #0126de !important;
+  cursor: pointer;
+  width: auto;
+  padding: 5px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.002px; 
+  border-radius: 35px;
 }
