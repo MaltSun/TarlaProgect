@@ -81,7 +81,7 @@
     flex-direction: column;
   }
   .div1 {
-    width: 90%;
+    width: 99%;
   }
   .button8{
     width: 70%;
@@ -113,6 +113,9 @@
   }
   .section2{
     width: 89%;
+  }
+  .divfooter{
+    width: 80%;
   }
 }
 @media screen and (max-width: 470px) {

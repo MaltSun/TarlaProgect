@@ -106,4 +106,8 @@
   .img6 {
     display: none;
   }
+  .divfooter{
+    flex-direction: column;
+    gap:10px;
+  }
 }

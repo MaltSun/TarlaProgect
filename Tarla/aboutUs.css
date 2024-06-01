@@ -277,7 +277,7 @@
 }
 .divfooter {
   width: 60%;
-  gap: 20px;
+  gap: 20px 20px;
   height: auto;
   display: flex;
   justify-content: space-around;
