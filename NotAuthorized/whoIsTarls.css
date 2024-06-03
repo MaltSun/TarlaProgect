@@ -6,6 +6,7 @@
   text-decoration: none;
   list-style: none;
   cursor: none;
+  color: black;
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
@@ -155,7 +156,7 @@
      gap: 10px;
     }
     .divfooter {
-      width: 60%;
+      width: 70%;
       height: auto;
       display: flex;
       gap: 20px 20px;

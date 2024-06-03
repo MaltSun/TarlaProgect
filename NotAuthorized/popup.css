@@ -94,6 +94,8 @@ body.lock {
 .registrationButton{
   border: 1px solid #0126de !important;
   color: #0126de !important;
+  background: #f0f0f0;
+  text-decoration: none;
   cursor: pointer;
   width: auto;
   padding: 5px;
@@ -104,4 +106,10 @@ body.lock {
   font-weight: 400;
   line-height: 34.002px; 
   border-radius: 35px;
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
 }

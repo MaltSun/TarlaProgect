@@ -33,7 +33,9 @@
   .visible {
     display: none;
   }
-
+.section1{
+  padding: 24px 16px;
+}
 }
 @media screen and (max-width: 1107px) {
   .section3 {
@@ -78,6 +80,7 @@
   }
   .section1 {
     width: 83%;
+    padding: 24px 16px;
   }
   .button1 {
     width: 70%;

@@ -66,6 +66,10 @@
     display: none;
     justify-content: flex-end;
   }
+  .section1{
+width: 96%;
+padding: 24px 16px;
+}
 }
 
 @media screen and (max-width: 725px) {

@@ -204,8 +204,8 @@
   width: 93.5%;
   height: auto;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   gap: 70px;
   padding: 48px;
@@ -229,7 +229,6 @@
     display: none;
   }
   .text {
-    width: 90%;
     margin: 0px;    
   }
   .textMap{
