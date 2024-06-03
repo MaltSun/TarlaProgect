@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const username = document.getElementById("username").value;
     const password = document.getElementById("loginPassword").value;
 
-    fetch("../data.json")
+    fetch("../Function/data.json")
       .then((response) => response.json())
       .then((users) => {
         const foundUser = users.find(

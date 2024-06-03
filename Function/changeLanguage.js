@@ -156,9 +156,11 @@ const i18Obj = {
     Registration: "Sign Up",
     Username: "Username",
     Password: "Password",
+    CreateAccount: "Create account",
     Enter:"Enter"
   },
   ru: {
+    CreateAccount: "Создать аккаунт",
     Enter:"Войти",
     Password: "Пароль",
     Username: "Логин",
