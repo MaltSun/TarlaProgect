@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleLocation.css">
-    <link rel="stylesheet" href="../changeColor.css" >
+    <link rel="stylesheet" href="../Function/changeColor.css" >
     <link rel="stylesheet" href="popup.css">
-    <link rel="stylesheet" href="../effects.css">
+    <link rel="stylesheet" href="../Function/effects.css">
     <title>We located</title>
     <link rel="icon" href="../Images/croissant.png" type="image/png">
 </head>
 <body class="body">
     <header id="top" class="header theme-specialElement lockPadding">
-      <a class="logo" href="../NotAuthorized/index.html"><img src="../Images/Frame.png" alt="logo" ></a>
-      
-      <div class="hamburger-menu ">
+        <div class="hamburger-menu hamburg">
         <input id="menu__toggle" type="checkbox" >
         <label class="menu__btn" for="menu__toggle">
           <span></span>
@@ -31,8 +29,8 @@
           </li>
           </ul>
       </div>
-      
-        <ul class="navigation">
+      <a class="logo" href="../NotAuthorized/index.html"><img src="../Images/Frame.png" alt="logo" ></a>
+          <ul class="navigation">
             <li class="li"><a class="link theme-specialElement" data-i18="ingredient"  href="#ingredient"> Ingredients</a></li>
             <li class="li"><a class="link theme-specialElement" data-i18="Location"  href="#location">Location</a></li>
             <li class="li"><a class="link theme-specialElement" data-i18="Legend" href="#legend">Legend</a></li>
@@ -42,7 +40,7 @@
               <img src="../Images/UK.png" alt="light">
             </button>
             <button data-i18="ru" class="switcher changeButton theme-blueButton">
-              <img src="../Iages/russia.png" alt="light">
+              <img src="../Images/russia.png" alt="light">
             </button>
           </div>
           <div class="switchers">
@@ -62,9 +60,9 @@
         
             <img class="img" src="../Images/aboutUs1.png" alt="">
             <div class="text">
-              <h1 data-i18="AmazingIngredients" id="ingredient" class="textH1">Amazing Ingredients</h1>
+              <h1 data-i18="AmazingIngredients" id="ingredient" class="textH1 textMap">Amazing Ingredients</h1>
               <img class="unvisibleImg" src="../Images/aboutUs1.png" alt="">
-              <p data-i18="AmazingIngredientsDif" class="textP">
+              <p data-i18="AmazingIngredientsDif" class="textP textMap">
                 We like to keep things simple and authentic. We’ve sourced the very
                 best from the very best, from our Poitou-Charentes butter to our
                 Valrhona chocolate batons.
@@ -90,9 +88,9 @@
     <section class="section theme-element">                          
           <img class="img" src="../Images/aboutUs2.png" alt=""> 
             <div class="text">
-              <h1 data-i18="LegendaryBakes" id="legend" class="textH1">Legendary Bakes</h1>
+              <h1 data-i18="LegendaryBakes" id="legend" class="textH1 textMap">Legendary Bakes</h1>
               <img class="unvisibleImg" src="../Images/aboutUs2.png" alt=""> 
-              <p data-i18="LegendaryBakesDif" class="textP">
+              <p data-i18="LegendaryBakesDif" class="textP textMap">
                 The inspiration for our brand and our guiding principles is the
                 Legend of El Tarlà. A young man who brought joy to the isolated
                 citizens of Girona during an outbreak of the plague.
@@ -101,12 +99,12 @@
     </section>
     <footer class="footer theme-element">
       <div class="icon">
-        <a href="tel:+375295950858">
+        <a class="popupAuthorization" href="tel:+375295950858">
         <img src="../Images/phone.png" alt="Telephone" >
         </a>
         <a href="https://github.com/MaltSun/TarlaProgect"
           ><img src="../Images/github.png" alt="Github"></a>
-        <a href="mailto:polina.solodkova507@gmail.com">
+        <a class="popupAuthorization" href="mailto:polina.solodkova507@gmail.com">
          <img src="../Images/e-mail.png" alt="E-mail">
       </a>      
       </div>
@@ -116,7 +114,7 @@
     <a class="link theme-element" data-i18="TermsOfService" href="../NotAuthorized/WhoIsTarta.html">Terms of Service</a>
     <a class="link theme-element" data-i18="Privacy" href="../NotAuthorized/WhoIsTarta.html">Privacy Policy</a>
   </div>
-  <script src="../changeColor.js"></script>
+  <script src="../Function/changeColor.js"></script>
     </footer> 
     <div id="popup" class="popup">
       <div class="popupBody">
@@ -128,9 +126,10 @@
             <input data-i18="Password" type="password" id="loginPassword" name="password" placeholder="Password" required>
            <div class="buttonDiv">
             <button data-i18="Enter" class="authorizationButton" type="submit">Enter</button>         
-           </div>
+            <a data-i18="CreateAccount" class="popupRegistration  registrationButton" href="#popup2">Create account</a> 
+          </div>
          </form>
-          <script src="../logIn.js"></script>
+          <script src="../Function/logIn.js"></script>
         </div>
       </div>
     </div>
@@ -173,7 +172,7 @@
           <div class="form-group">
               <label for="nickname">Никнейм:</label>
               <input type="text" id="nickname" name="nickname" placeholder="Никнейм" required readonly>
-              <button type="button" id="regenerateNickname">Сгенерировать никнейм</button>
+              <button type="button" id="regenerateNickname" class="registrationButton">Сгенерировать никнейм</button>
               <span class="error" id="nicknameError"></span>
           </div>
           <div class="form-group">
@@ -181,7 +180,7 @@
               <label for="agreement">Я прочитал(а) и согласен(а) с <a href="#">Соглашением пользователя</a></label>
               <span class="error" id="agreementError"></span>
           </div>
-          <button type="submit" class="registration">
+          <button type="submit" class="registration registrationButton">
            Зарегистрироваться
            </button>
           <span class="success" id="successMessage"></span>
@@ -190,9 +189,9 @@
       </div>
     </div>
   <script src="../Tarla/swaper.js"></script>
-  <script src="../changeLanguage.js"></script>
+  <script src="../Function/changeLanguage.js"></script>
   <script src="popup.js"></script>   
   <script src="popup2.js"></script>
-  <script src="../signUp.js"></script>
+  <script src="../Function/signUp.js"></script>
 </body>
 </html>

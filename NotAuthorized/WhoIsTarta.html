@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../NotAuthorized/whoIsTarls.css" >
     <link rel="stylesheet" href="../NotAuthorized/medialStyleWhoIsTarls.css" >
-    <link rel="stylesheet" href="../changeColor.css" >
+    <link rel="stylesheet" href="../Function/changeColor.css" >
     <link rel="stylesheet" href="popup.css">
-    <link rel="stylesheet" href="../effects.css">
+    <link rel="stylesheet" href="../Function/effects.css">
     <title>Who is tarla?</title>
     <link rel="icon" href="../Images/croissant.png" type="image/png">
   </head>
   <body class="body theme-element">
     <header id="top" class="header theme-element lockPadding">
-      <div class="hamburger-menu">
+      <div class="hamburger-menu hamburg">
         <input id="menu__toggle" type="checkbox">
         <label class="menu__btn" for="menu__toggle">
           <span></span>
@@ -212,10 +212,11 @@
             <input data-i18="Username" type="text" id="username" name="username" placeholder="Username" required>
             <input data-i18="Password" type="password" id="loginPassword" name="password" placeholder="Password" required>
            <div class="buttonDiv">
-            <button data-i18="Enter" class="authorizationButton" type="submit">Enter</button>         
+            <button data-i18="Enter" class="authorizationButton" type="submit">Enter</button>   
+            <a data-i18="CreateAccount" class="popupRegistration  registrationButton" href="#popup2">Create account</a>       
            </div>
          </form>
-          <script src="../logIn.js"></script>
+          <script src="../Function/logIn.js"></script>
         </div>
       </div>
     </div>
@@ -258,7 +259,7 @@
           <div class="form-group">
               <label for="nickname">Никнейм:</label>
               <input type="text" id="nickname" name="nickname" placeholder="Никнейм" readonly required>
-              <button type="button" id="regenerateNickname">Сгенерировать никнейм</button>
+              <button type="button" id="regenerateNickname" class="registrationButton">Сгенерировать никнейм</button>
               <span class="error" id="nicknameError"></span>
           </div>
           <div class="form-group">
@@ -266,22 +267,22 @@
               <label for="agreement">Я прочитал(а) и согласен(а) с <a href="#">Соглашением пользователя</a></label>
               <span class="error" id="agreementError"></span>
           </div>
-          <button type="submit" class="registration">Зарегистрироваться</button>
+          <button type="submit" class="registration registrationButton">Зарегистрироваться</button>
           <span class="success" id="successMessage"></span>
         </form> 
         </div>
       </div>  
-      <script src="../signUp.js"></script>  
+      <script src="../Function/signUp.js"></script>  
     </div>
     <script src="popup.js"></script>
   <footer class="footer theme-element" >
     <div class="icon">
-      <a href="tel:+375295950858">
+      <a class="popupAuthorization" href="tel:+375295950858">
       <img src="../Images/phone.png" alt="Telephone" >
       </a>
       <a href="https://github.com/MaltSun/TarlaProgect"
         ><img src="../Images/github.png" alt="Github"></a>
-      <a href="mailto:polina.solodkova507@gmail.com">
+      <a class="popupAuthorization" href="mailto:polina.solodkova507@gmail.com">
        <img src="../Images/e-mail.png" alt="E-mail" >
      </a>      
     </div>
@@ -291,9 +292,9 @@
   <a class="link theme-element" data-i18="FAQ" href="../NotAuthorized/index.html">Facts</a>
   <a class="link theme-element" data-i18="HowToUse" href="../NotAuthorized/index.html">How use</a>
 </div>
-<script src="../changeColor.js"></script>
-<script src="../changeLanguage.js"></script>
-    <script src="../changeColor.js"></script>
+<script src="../Function/changeColor.js"></script>
+<script src="../Function/changeLanguage.js"></script>
+    <script src="../Function/changeColor.js"></script>
   </footer>
 </body>   
 </html>

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../NotAuthorized/style.css">
     <link rel="stylesheet" href="mediaStyle.css">
     <link rel="stylesheet" href="popup.css">
-    <link rel="stylesheet" href="swaper.css">
-    <link rel="stylesheet" href="../changeColor.css">
-    <link rel="stylesheet" href="../effects.css">
+    <link rel="stylesheet" href="../swaper.css">
+    <link rel="stylesheet" href="../Function/changeColor.css">
+    <link rel="stylesheet" href="../Function/effects.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
@@ -18,7 +18,7 @@
   </head>
   <body class="base">
     <header class="header theme-element lockPadding">
-      <div class="hamburger-menu theme-element">
+      <div class="hamburger-menu theme-element hamburg">
         <input id="menu__toggle" type="checkbox">
         <label class="menu__btn" for="menu__toggle">
           <span></span>
@@ -50,7 +50,7 @@
           </li>
         </ul>
       </div>
-      <img class="img" src="../Images/Frame.png" alt="logo">
+      <img class="img logo" src="../Images/Frame.png" alt="logo">
       <ul class="navigation">
         <li class="li">
           <a data-i18="headerShop" class="link theme-element" href="#shop">
@@ -74,7 +74,6 @@
           >
         </li>
       </ul>
-
       <div class="switchers">
         <button data-i18="en" class="switcher changeButton theme-blueButton">
           <img src="../Images/UK.png" alt="light">
@@ -128,9 +127,10 @@
               >
                 Enter
               </button>
+              <a data-i18="CreateAccount" class="popupRegistration  registrationButton" href="#popup2">Create account</a>              
             </div>
           </form>
-          <script src="../logIn.js"></script>
+          <script src="../Function/logIn.js"></script>
         </div>
       </div>
     </div>
@@ -231,12 +231,12 @@
               Зарегистрироваться
             </button>
             <span class="success" id="successMessage"></span>
+            <span class="error" id="accountError"></span>
           </form>
         </div>
       </div>
-      <script src="../signUp.js"></script>
+      <script src="../Function/signUp.js"></script>
     </div>
-
     <section class="section1 theme-block">
       <div id="shop" class="div1">
         <h1 data-i18="FreshPastryKits" class="H1">Fresh pastry kits</h1>
@@ -355,23 +355,19 @@
     </section>
     <div class="line"></div>
     <section class="section8 theme-element">
-      <h2 data-i18="JoinOurCommunity" class="H8">Join our community</h2>
+      <h1 data-i18="JoinOurCommunity" class="H8">Join our community</h1>
       <p data-i18="GetBaked" class="p8">and let's get baked</p>
-      <a
-        class="button8 heme-blueButton"
-        data-i18="SendUsMessage"
-        href="mailto:polina.solodkova507@gmail.com"
-        >Let's start</a
-      >
+        <a class="button8 theme-button popupAuthorization" data-i18="SendUsMessage" href="mailto:polina.solodkova507@gmail.com"
+          >Send us a message</a>
     </section>
     <footer class="footer theme-element">
       <div class="icon">
-        <a href="tel:+375295950858">
+        <a class="popupAuthorization" href="tel:+375295950858">
           <img src="../Images/phone.png" alt="Telephone">
         </a>
         <a href="https://github.com/MaltSun/TarlaProgect"
           ><img src="../Images/github.png" alt="Github"></a>
-        <a href="mailto:polina.solodkova507@gmail.com">
+        <a class="popupAuthorization" href="mailto:polina.solodkova507@gmail.com">
           <img src="../Images/e-mail.png" alt="E-mail">
         </a>
       </div>
@@ -396,15 +392,15 @@
         >
         <a
           data-i18="Privacy"
-          class="link theme-element"
+          class="link theme-element "
           href="../NotAuthorized/WhoIsTarta.html"
           >Privacy Policy</a
         >
       </div>
       <script src="popup.js"></script>
       <script src="../Tarla/swaper.js"></script>
-      <script src="../changeLanguage.js"></script>
-      <script src="../changeColor.js"></script>
+      <script src="../Function/changeLanguage.js"></script>
+      <script src="../Function/changeColor.js"></script>
     </footer>
   </body>
 </html>
