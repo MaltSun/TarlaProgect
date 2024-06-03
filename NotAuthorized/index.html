@@ -141,8 +141,9 @@
           <a href="" class="popupClose closePopup">x</a>
           <form id="registrationForm" class="registrationForm">
             <div class="form-group">
-              <label for="phone">Номер телефона (РБ):</label>
+              <label data-i18="Phone" for="phone">Номер телефона (РБ):</label>
               <input
+              data-i18="Phone"
                 type="text"
                 id="phone"
                 name="phone"
@@ -152,8 +153,9 @@
               <span class="error" id="phoneError"></span>
             </div>
             <div class="form-group">
-              <label for="email">Email:</label>
+              <label data-i18="Email" for="email">Email:</label>
               <input
+              data-i18="Email"
                 type="email"
                 id="email"
                 name="email"
@@ -163,13 +165,14 @@
               <span class="error" id="emailError"></span>
             </div>
             <div class="form-group">
-              <label for="dob">Дата рождения:</label>
+              <label data-i18="bdd" for="dob">Дата рождения:</label>
               <input type="date" id="dob" name="dob" required>
               <span class="error" id="dobError"></span>
             </div>
             <div class="form-group">
-              <label for="password">Пароль:</label>
+              <label data-i18="Password" for="password">Пароль:</label>
               <input
+              data-i18="Password"
                 type="password"
                 id="password"
                 name="password"
@@ -179,8 +182,9 @@
               <span class="error" id="passwordError"></span>
             </div>
             <div class="form-group">
-              <label for="confirmPassword">Повторите пароль:</label>
+              <label data-i18="confirmPassword" for="confirmPassword">Повторите пароль:</label>
               <input
+              data-i18="confirmPassword"
                 type="password"
                 id="confirmPassword"
                 name="confirmPassword"
@@ -190,8 +194,9 @@
               <span class="error" id="confirmPasswordError"></span>
             </div>
             <div class="form-group">
-              <label for="fullname">ФИО:</label>
+              <label data-i18="fullname" for="fullname">ФИО:</label>
               <input
+              data-i18="fullname"
                 type="text"
                 id="fullname"
                 name="fullname"
@@ -201,8 +206,9 @@
               <span class="error" id="fullnameError"></span>
             </div>
             <div class="form-group">
-              <label for="nickname">Никнейм:</label>
+              <label data-i18="Nickname" for="nickname">Никнейм:</label>
               <input
+              data-i18="Nickname"
                 type="text"
                 id="nickname"
                 name="nickname"
@@ -211,6 +217,7 @@
                 readonly
               >
               <button
+              data-i18="generateNickname"
                 type="button"
                 id="regenerateNickname"
                 class="registrationButton"
@@ -221,13 +228,13 @@
             </div>
             <div class="form-group">
               <input type="checkbox" id="agreement" name="agreement" required>
-              <label for="agreement"
+              <label for="agreement" data-i18="ReadAndEgree"
                 >Я прочитал(а) и согласен(а) с
-                <a href="#">Соглашением пользователя</a></label
+                <a data-i18="Egree" href="#">Соглашением пользователя</a></label
               >
               <span class="error" id="agreementError"></span>
             </div>
-            <button type="submit" class="registration registrationButton">
+            <button data-i18="Registration" type="submit" class="registration registrationButton">
               Зарегистрироваться
             </button>
             <span class="success" id="successMessage"></span>
