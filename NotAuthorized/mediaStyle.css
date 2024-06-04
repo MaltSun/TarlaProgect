@@ -1,0 +1,161 @@
+@media screen and (max-width: 900px) {
+  .hamburger-menu {
+    visibility: visible;
+  }
+  .navigation {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 960px) {
+  .section3 {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1412px) {
+  .img1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1435px) {
+  .section5 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .unvisibleImg {
+    display: flex;
+  }
+  .img {
+    display: none;
+  }
+}
+@media screen and (max-width: 930px) {
+  .button4unvisible {
+    display: block;
+  }
+  .section4 {
+    flex-direction: column;
+  }
+  .visible4 {
+    display: none;
+  }
+  .visible5 {
+    display: none;
+  }
+  .visible6 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1107px) {
+  .section3 {
+    flex-direction: column;
+  }
+  .img3 {
+    display: none;
+  }
+  .img3UnVisible {
+    display: block;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hamburger-menu {
+    visibility: visible;
+  }
+  .navigation {
+    display: none;
+    justify-content: flex-end;
+  }
+  .section1{
+width: 96%;
+padding: 24px 16px;
+}
+}
+
+@media screen and (max-width: 725px) {
+  .img {
+    display: none;
+  }
+  .footer {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .section1 {
+    flex-direction: column;
+  }
+  .div1 {
+    width: 99%;
+  }
+  .button8{
+    width: 70%;
+  }
+  .header{
+    width: 89.5%;
+  }
+  .section1{
+    width: 89%;
+  }
+  .P1{
+    width: 80%;
+  }
+  .button1{
+    width: 70%;
+  }
+  .section2{
+    width: 93%;
+  }
+  .section6{
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .section3 {
+    padding: 5px;
+    justify-content: center;
+  }
+  .section2{
+    width: 89%;
+  }
+  .divfooter{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .img{
+    display: none;    
+  }
+  .img6{
+    display: none;
+  }
+  .div6{
+    height: auto;
+  }
+  .button2{
+    width: 70%;
+  }
+  .section6{
+    width: 95%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .div6{
+    width: auto;
+  }
+  .p6_2{
+    width: 80%;
+  }
+  .p6_1{
+    width: 85%
+  }
+  .p2_2{
+    width: 90%;
+  }
+  .section1{
+    width: 84%;
+  }
+  .header{
+    width: 85%;
+  }
+}

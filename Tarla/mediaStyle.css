@@ -1,0 +1,116 @@
+@media screen and (max-width: 900px) {
+  .hamburger-menu {
+    visibility: visible;
+  }
+  .navigation {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .section3 {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1412px) {
+  .img1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1435px) {
+  .section5 {
+    display: none;
+  }
+}
+@media screen and (max-width: 930px) {
+  .button4unvisible {
+    display: block;
+  }
+  .section4 {
+    width: 98%;
+    flex-direction: column;
+  }
+  .visible {
+    display: none;
+  }
+.section1{
+  padding: 24px 16px;
+}
+}
+@media screen and (max-width: 1107px) {
+  .section3 {
+    flex-direction: column;
+  }
+  .img3 {
+    display: none;
+  }
+  .img3UnVisible {
+    display: block;
+  }
+}
+@media screen and (max-width: 740px) {
+  .img3 {
+    display: none;
+  }
+  .div3 {
+    width: 80%;
+  }
+  .img3UnVisible {
+    display: none;
+  }
+  .H2_2 {
+    width: 80%;
+  }
+  .p2_2 {
+    width: 80%;
+  }
+  .button2 {
+    width: 70%;
+  }
+  .section2 {
+    width: 90%;
+  }
+  .p6_1 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+  .section1 {
+    width: 83%;
+    padding: 24px 16px;
+  }
+  .button1 {
+    width: 70%;
+  }
+  .header {
+    width: 85%;
+  }
+  .button8 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+  .img4 {
+    display: none;
+  }
+  .div6 {
+    height: auto;
+    padding: 5px;
+  }
+  .section6 {
+    width: 95%;
+  }
+  .img6 {
+    display: none;
+  }
+  .divfooter{
+    flex-direction: column;
+    gap:10px;
+  }
+}

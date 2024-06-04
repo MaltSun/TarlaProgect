@@ -1,0 +1,72 @@
+.button8 {
+  transition: transform 0.3s ease;
+}
+.button8:hover {
+  transform: scale(1.05);
+}
+
+.button1:hover,
+.button2:hover {
+  text-decoration: underline;
+}
+
+.div6:hover {
+  background-color: #d6ccc7;
+  transition: background-color 0.3s ease;
+}
+
+.img6 {
+  transition: filter 0.3s ease;
+}
+.img6:hover {
+  filter: brightness(70%);
+}
+
+.mainText {
+  transition: color 0.3s ease;
+}
+.mainText:hover {
+  color: rgb(4, 80, 186);
+}
+
+.visibleMap:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.link:hover {
+  font-size: 1.05em;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 70px;
+  background: #f6ddcadc;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.logo{
+  margin-left: 0px;
+}
+.hamburg{
+  margin: 5px;
+  }
+
+.mainText {
+  transition: transform 0.3s ease;
+}
+.mainText:hover {
+  transform: scale(1.05);
+}

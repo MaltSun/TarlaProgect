@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLocation.css">
+    <link rel="stylesheet" href="../Function/changeColor.css" >
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="../Function/effects.css">
+    <title>We located</title>
+    <link rel="icon" href="../Images/croissant.png" type="image/png">
+</head>
+<body class="body">
+    <header id="top" class="header theme-specialElement lockPadding">
+        <div class="hamburger-menu hamburg">
+        <input id="menu__toggle" type="checkbox" >
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box theme-element">
+           <li>
+            <a class="menu__item theme-element" data-i18="ingredient"  href="#ingredient"> Ingredients</a>
+          </li>
+          <li>
+            <a class="menu__item theme-element" data-i18="Location"  href="#location">Location</a>
+          </li>
+          <li>
+            <a class="menu__item theme-element" data-i18="Legend" href="#legend">Legend</a>
+          </li>
+          </ul>
+      </div>
+      <a class="logo" href="../NotAuthorized/index.html"><img src="../Images/Frame.png" alt="logo" ></a>
+          <ul class="navigation">
+            <li class="li"><a class="link theme-specialElement" data-i18="ingredient"  href="#ingredient"> Ingredients</a></li>
+            <li class="li"><a class="link theme-specialElement" data-i18="Location"  href="#location">Location</a></li>
+            <li class="li"><a class="link theme-specialElement" data-i18="Legend" href="#legend">Legend</a></li>
+          </ul>
+          <div class="switchers">
+            <button data-i18="en" class="switcher changeButton theme-blueButton">
+              <img src="../Images/UK.png" alt="light">
+            </button>
+            <button data-i18="ru" class="switcher changeButton theme-blueButton">
+              <img src="../Images/russia.png" alt="light">
+            </button>
+          </div>
+          <div class="switchers">
+            <button class="changeButton theme-blueButton" id="light-theme-btn">
+              <img src="../Images/sun.png" alt="light">
+            </button>
+            <button class="changeButton theme-blueButton" id="dark-theme-btn">
+              <img src="../Images/night.png" alt="light">
+            </button>
+          </div>
+          <div class="switchers">
+              <a class="logIn popupAuthorization theme-blueButton" href="#popup"> <img src="../Images/authorization.png" alt="Log In"></a>
+             <a class="logIn popupRegistration theme-blueButton" href="#popup2"><img src="../Images/registration.png" alt="Sign Up"></a>
+          </div> 
+    </header>
+    <section class="section theme-element">
+        
+            <img class="img" src="../Images/aboutUs1.png" alt="">
+            <div class="text">
+              <h1 data-i18="AmazingIngredients" id="ingredient" class="textH1 textMap">Amazing Ingredients</h1>
+              <img class="unvisibleImg" src="../Images/aboutUs1.png" alt="">
+              <p data-i18="AmazingIngredientsDif" class="textP textMap">
+                We like to keep things simple and authentic. We’ve sourced the very
+                best from the very best, from our Poitou-Charentes butter to our
+                Valrhona chocolate batons.
+              </p>
+            </div> 
+    </section>
+    <section class=" map theme-specialElement">
+      <div class="text">
+        <h1 data-i18="OurLocationInUSA" id="location" class="textH1 textMap ">Our location in USA</h1>  
+        <div class="unvisibleMap">
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=320&amp;height=323&amp;lang=ru_RU&amp;scroll=true"></script>
+       </div>    
+        <p data-i18="OurLocationInUSADif" class="textP textMap">
+          We like to keep things simple and authentic. We’ve sourced the very
+          best from the very best, from our Poitou-Charentes butter to our
+          Valrhona chocolate batons.
+        </p>
+      </div>
+      <div class="img visibleMap">
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95807406d856345eba73c97d2893c444290a9934cbe996ff770a6fd6f2be3302&amp;width=630&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div> 
+     </section>
+    <section class="section theme-element">                          
+          <img class="img" src="../Images/aboutUs2.png" alt=""> 
+            <div class="text">
+              <h1 data-i18="LegendaryBakes" id="legend" class="textH1 textMap">Legendary Bakes</h1>
+              <img class="unvisibleImg" src="../Images/aboutUs2.png" alt=""> 
+              <p data-i18="LegendaryBakesDif" class="textP textMap">
+                The inspiration for our brand and our guiding principles is the
+                Legend of El Tarlà. A young man who brought joy to the isolated
+                citizens of Girona during an outbreak of the plague.
+              </p>
+            </div>                  
+    </section>
+    <footer class="footer theme-element">
+      <div class="icon">
+        <a class="popupAuthorization" href="tel:+375295950858">
+        <img src="../Images/phone.png" alt="Telephone" >
+        </a>
+        <a href="https://github.com/MaltSun/TarlaProgect"
+          ><img src="../Images/github.png" alt="Github"></a>
+        <a class="popupAuthorization" href="mailto:polina.solodkova507@gmail.com">
+         <img src="../Images/e-mail.png" alt="E-mail">
+      </a>      
+      </div>
+  <div class="divfooter" > 
+    <a class="link theme-element" data-i18="FAQ"  href="../NotAuthorized/WhoIsTarta.html">FAQ</a>
+    <a class="link theme-element" data-i18="Tarla"  href="../NotAuthorized/index.html">Tarla</a>
+    <a class="link theme-element" data-i18="TermsOfService" href="../NotAuthorized/WhoIsTarta.html">Terms of Service</a>
+    <a class="link theme-element" data-i18="Privacy" href="../NotAuthorized/WhoIsTarta.html">Privacy Policy</a>
+  </div>
+  <script src="../Function/changeColor.js"></script>
+    </footer> 
+    <div id="popup" class="popup">
+      <div class="popupBody">
+        <div class="popupContent">
+         <h3 data-i18="LogIn">Log in</h3> 
+         <a href="" class="popupClose closePopup">x</a>          
+          <form id="loginForm">
+            <input data-i18="Username" type="text" id="username" name="username" placeholder="Username" required>
+            <input data-i18="Password" type="password" id="loginPassword" name="password" placeholder="Password" required>
+           <div class="buttonDiv">
+            <button data-i18="Enter" class="authorizationButton" type="submit">Enter</button>         
+            <a data-i18="CreateAccount" class="popupRegistration  registrationButton" href="#popup2">Create account</a> 
+          </div>
+         </form>
+          <script src="../Function/logIn.js"></script>
+        </div>
+      </div>
+    </div>
+    <div id="popup2" class="popup">
+      <div class="popupBody">
+        <div class="popupContent">
+          <h3 data-i18="Registration">Sign Up</h3>
+          <a href="" class="popupClose closePopup">x</a>
+          <form id="registrationForm" class="registrationForm">
+            <div class="form-group">
+              <label data-i18="Phone" for="phone">Номер телефона (РБ):</label>
+              <input
+              data-i18="Phone"
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Номер телефона"
+                required
+              >
+              <span class="error" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+              <label data-i18="Email" for="email">Email:</label>
+              <input
+              data-i18="Email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              >
+              <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label data-i18="bdd" for="dob">Дата рождения:</label>
+              <input type="date" id="dob" name="dob" required>
+              <span class="error" id="dobError"></span>
+            </div>
+            <div class="form-group">
+              <label data-i18="Password" for="password">Пароль:</label>
+              <input
+              data-i18="Password"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Пароль"
+                required
+              >
+              <span class="error" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+              <label data-i18="confirmPassword" for="confirmPassword">Повторите пароль:</label>
+              <input
+              data-i18="confirmPassword"
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Повторите пароль"
+                required
+              >
+              <span class="error" id="confirmPasswordError"></span>
+            </div>
+            <div class="form-group">
+              <label data-i18="fullname" for="fullname">ФИО:</label>
+              <input
+              data-i18="fullname"
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="ФИО"
+                required
+              >
+              <span class="error" id="fullnameError"></span>
+            </div>
+            <div class="form-group">
+              <label data-i18="Nickname" for="nickname">Никнейм:</label>
+              <input
+              data-i18="Nickname"
+                type="text"
+                id="nickname"
+                name="nickname"
+                placeholder="Никнейм"
+                required
+                readonly
+              >
+              <button
+              data-i18="generateNickname"
+                type="button"
+                id="regenerateNickname"
+                class="registrationButton"
+              >
+                Сгенерировать никнейм
+              </button>
+              <span class="error" id="nicknameError"></span>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="agreement" name="agreement" required>
+              <label for="agreement" data-i18="ReadAndEgree"
+                >Я прочитал(а) и согласен(а) с
+                <a data-i18="Egree" href="#">Соглашением пользователя</a></label
+              >
+              <span class="error" id="agreementError"></span>
+            </div>
+            <button data-i18="Registration" type="submit" class="registration registrationButton">
+              Зарегистрироваться
+            </button>
+            <span class="success" id="successMessage"></span>
+            <span class="error" id="accountError"></span>
+          </form>
+        </div>
+      </div>
+      <script src="../Function/signUp.js"></script>
+    </div>
+  <script src="../Tarla/swaper.js"></script>
+  <script src="../Function/changeLanguage.js"></script>
+  <script src="popup.js"></script>   
+  <script src="popup2.js"></script>
+  <script src="../Function/signUp.js"></script>
+</body>
+</html>
